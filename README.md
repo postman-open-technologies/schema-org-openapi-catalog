@@ -28,5 +28,5 @@
 
 ## Qualifying tasks
 
-See [the issue list](issues)
+See [the issue list](./issues)
 
