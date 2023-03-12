@@ -8,7 +8,7 @@
 
 **Mentors:** @MikeRalphson + 1-2 additional mentors to be named.
 
-**Project Repo:** [postman-open-technologies/schema-org-openapi-catalog](https://github.com/postman-open-technologies/schema-org-openapi-catalog])
+**Project Repo:** [postman-open-technologies/schema-org-openapi-catalog](https://github.com/postman-open-technologies/schema-org-openapi-catalog) 
 
 **Size of Project:** 175h
 
