@@ -14,6 +14,8 @@
 
 **Rating:** Medium skills level
 
+**Tech stack:** at the candidate's discretion, but a preference for the ability to package as an `npm` module. 
+
 ## Resources
 
 * https://schema.org/
