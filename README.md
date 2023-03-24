@@ -1,4 +1,4 @@
-HiI# Schema.Org OpenAPI Catalog
+# Schema.Org OpenAPI Catalog
 
 **Summary:** Create an open catalog of OpenAPI definitions for each of the [Schema.org](https://schema.org/) Types. Providing a robust set of starting OpenAPI templates for teaching or developing new APIs using a design-first approach. Helping save developers work when it comes to starting new APIs, but also help ensure APIs are developed using common standards and are as interoperable as possible.
 
