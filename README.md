@@ -6,7 +6,7 @@ HiI# Schema.Org OpenAPI Catalog
 
 **Expected Outcomes:** A public repository of up-to-date OpenAPI 3.1 definitions and validated JSON Schema instances for each of the Schema.org Types. You must share your code used to generate the output definitions, allowing them to be updated as schema.org Types evolve.
 
-**Mentors:** @MikeRalphson + 1-2 additional mentors to be named.
+**Mentors:** [@MikeRalphson](https://github.com/MikeRalphson), [@sourabhbagrecha](https://github.com/sourabhbagrecha) and [@saialekhya-001](https://github.com/saialekhya-001)
 
 **Project Repo:** [postman-open-technologies/schema-org-openapi-catalog](https://github.com/postman-open-technologies/schema-org-openapi-catalog) 
 
