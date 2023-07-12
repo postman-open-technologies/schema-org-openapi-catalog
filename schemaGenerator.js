@@ -20,6 +20,12 @@ schemaTypes = data['@graph'].filter(item => {
     return item['@type'] == 'rdfs:Class';
 })
 
+/**
+ * 
+ * @param {object} schemaProperties an array of properties of a schema type
+ * @returns {object} properties an object consists of property name and its type 
+ */
+
 const getPropertyType = (schemaProperties) => {
     let properties = {};
     schemaProperties.forEach(prop => {
@@ -49,6 +55,12 @@ const getPropertyType = (schemaProperties) => {
     return properties;
 }
 
+/**
+ * 
+ * @param {string} typeName name of the schema type
+ * @returns 
+ */
+
 const getProperties = typeName => {
     const schemaProperties = data['@graph'].filter(item => {
         const domainIncludes = item['schema:domainIncludes'];
@@ -56,6 +68,11 @@ const getProperties = typeName => {
     })
     return getPropertyType(schemaProperties);
 }
+
+/**
+ * @function getJSONschema
+ * @param {object} type schema type 
+ */
 
 const getJSONschema = type => {
     schemaTemplate['$id'] = baseURL+type['rdfs:label']+'.json'
@@ -77,26 +94,35 @@ const getJSONschema = type => {
     schemaTemplate['properties'] = getProperties(type['@id'])
 }
 
+// Add the JSON schema generated in a collated schemas' file
+const saveJSONSchema = () => {
+    const fs = require('fs');
+    const file = fs.readFileSync('outputSchemas.json')
+    if (file.length == 0) {
+        const schemaVersion = {"$schema": "https://json-schema.org/draft/2020-12/schema"};
+        const updatedContent = Object.assign({},schemaVersion, schemaTemplate )
+        try{
+            fs.writeFileSync("outputSchemas.json", JSON.stringify(updatedContent));
+            console.log("JSON schema saved in the output file");
+        }
+        catch(err){
+            console.log(err);
+        }
+    } else {
+        var fileContent = JSON.parse(file);
+        var updatedContent = Object.assign({}, fileContent, schemaTemplate);
+        try{
+            fs.writeFileSync("outputSchemas.json", JSON.stringify(updatedContent));
+            console.log("JSON schema saved in the output file");
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+}
 // For every schema type, fetch the JSON schema and save it
 schemaTypes.forEach(type => {
     getJSONschema(type);
+    saveJSONSchema()
 });
 
-// Add the JSON schema generated in a collated schemas' file
-const fs = require('fs');
-const file = fs.readFileSync('outputSchemas.json')
-if (file.length == 0) {
-    const schemaVersion = {"$schema": "https://json-schema.org/draft/2020-12/schema"};
-    const updatedContent = Object.assign({},schemaVersion, schemaTemplate )
-    fs.writeFile("outputSchemas.json", JSON.stringify(updatedContent), (err) => {
-        if(err) throw err;
-        console.log("JSON schema saved in the output file");
-    })
-} else {
-    var fileContent = JSON.parse(file);
-    var updatedContent = Object.assign({}, fileContent, schemaTemplate);
-    fs.writeFile("outputSchemas.json", JSON.stringify(updatedContent), (err) => {
-        if (err) throw err;
-        console.log("JSON schema saved in the output file");
-    });
-}
