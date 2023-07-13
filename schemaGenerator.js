@@ -5,15 +5,38 @@ const schemaTemplate = {
 };
 
 // Data types' mapping from JSON-LD to JSON schema
-const dataTypesMapping = {
-    "schema:Text": "string",
-    "schema:Number": "number",
-    "schema:DateTime": "string",
-    "schema:Time": "string",
-    "schema:Boolean": "boolean",
-    "schema:Date": "string",
-    "schema:Integer": "integer"
-}
+const checkDataType = (x) => {
+    const tempType = {};
+    switch(x.join()){
+        case "schema:Text" :
+            tempType['type'] = "string";
+            break;
+        case "schema:Number": 
+            tempType['type'] = "number";
+            break;
+        case "schema:DateTime": 
+            tempType['type'] = "string";
+            tempType['format'] = "date";
+            break;
+        case "schema:Time":
+            tempType['type'] = "string";
+            tempType['format'] = "date-time";
+            break;
+        case "schema:Boolean": 
+            tempType['type'] = "boolean";
+            break;
+        case "schema:Date":
+            tempType['type'] = "string";
+            tempType['format'] = "date";
+            break;
+        case "schema:Integer": "integer"
+            tempType['type'] = "integer";
+            break;
+        default:
+            console.log('RangeInclude contain another Schema type');
+    }
+    return tempType;
+} 
 
 // Filter out all of the schema types present in the file data
 schemaTypes = data['@graph'].filter(item => {
@@ -34,22 +57,16 @@ const getPropertyType = (schemaProperties) => {
         
         // If rangeIncludes contain more than 1 data types
         if(Array.isArray(prop['schema:rangeIncludes'])){
+            properties[prop['rdfs:label']]['oneOf'] =[];
             prop['schema:rangeIncludes'].forEach(item => {
-                if(Object.values(item) in dataTypesMapping){                 // Check if the rangeIncludes is one of the basic data types
-                    properties[prop['rdfs:label']]['type'] = dataTypesMapping[Object.values(item)];
-                }
-                else{
-                    console.log('RangeInclude contain another Schema type');
-                }
+                propertyType = checkDataType(Object.values(item))
+                properties[prop['rdfs:label']]['oneOf'].push(propertyType);
             })
         }
         else{
-            if(Object.values(prop['schema:rangeIncludes']) in dataTypesMapping){
-                properties[prop['rdfs:label']]['type'] = dataTypesMapping[Object.values(prop['schema:rangeIncludes'])];
-            }
-            else{
-                console.log('RangeInclude contain another Schema type');
-            }
+            propertyType = checkDataType(Object.values(prop['schema:rangeIncludes']))
+            properties[prop['rdfs:label']] = {...properties[prop['rdfs:label']], ...propertyType};
+            console.log('-------------------Properties--------', properties)
         }
     })
     return properties;
