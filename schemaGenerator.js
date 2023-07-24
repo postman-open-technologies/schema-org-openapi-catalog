@@ -4,6 +4,23 @@ const baseURL = "https://schema.org/";
 const schemaTemplate = {
 };
 
+// Function is to collate all of the enumeration values of an enum
+const getEnumerations = (x) => {
+    let enumArray =[];
+    let msg = 'Data type is another schema type';
+    data['@graph'].forEach(item => {
+        if(item['@id'] === x){
+            if(item['@type'] === 'rdfs:Class' && item['rdfs:subClassOf'] && item['rdfs:subClassOf']['@id'] === 'schema:Enumeration'){
+                enumArray = data['@graph'].filter(item => item['@type'] === x)
+                .map(item => {
+                    return item['rdfs:label'];
+                })
+            }
+        }
+    })
+    return enumArray
+}
+
 // Data types' mapping from JSON-LD to JSON schema
 const checkDataType = (x) => {
     const tempType = {};
@@ -33,6 +50,9 @@ const checkDataType = (x) => {
             tempType['type'] = "integer";
             break;
         default:
+            const result = getEnumerations(x.join())
+            result.length?
+                tempType['enum'] = result:
             console.log('RangeInclude contain another Schema type');
     }
     return tempType;
@@ -40,7 +60,7 @@ const checkDataType = (x) => {
 
 // Filter out all of the schema types present in the file data
 schemaTypes = data['@graph'].filter(item => {
-    return item['@type'] == 'rdfs:Class';
+    return item['@type'] == 'rdfs:Class' && item['rdfs:subClassOf'] && item['rdfs:subClassOf']['@id'] !== 'schema:Enumeration';
 })
 
 /**
@@ -66,7 +86,6 @@ const getPropertyType = (schemaProperties) => {
         else{
             propertyType = checkDataType(Object.values(prop['schema:rangeIncludes']))
             properties[prop['rdfs:label']] = {...properties[prop['rdfs:label']], ...propertyType};
-            console.log('-------------------Properties--------', properties)
         }
     })
     return properties;
@@ -81,7 +100,14 @@ const getPropertyType = (schemaProperties) => {
 const getProperties = typeName => {
     const schemaProperties = data['@graph'].filter(item => {
         const domainIncludes = item['schema:domainIncludes'];
-        return (item['@type'] == 'rdf:Property' && domainIncludes['@id'] ==  typeName);
+        if(item['@type'] == 'rdf:Property'){
+            if(Array.isArray(domainIncludes)){
+                return domainIncludes.some(item => item['@id'] === typeName);
+            }
+            else {
+                return domainIncludes['@id'] ==  typeName;
+            }
+        }
     })
     return getPropertyType(schemaProperties);
 }
@@ -120,7 +146,6 @@ const saveJSONSchema = () => {
         const updatedContent = Object.assign({},schemaVersion, schemaTemplate )
         try{
             fs.writeFileSync("outputSchemas.json", JSON.stringify(updatedContent));
-            console.log("JSON schema saved in the output file");
         }
         catch(err){
             console.log(err);
@@ -137,9 +162,10 @@ const saveJSONSchema = () => {
         }
     }
 }
+
 // For every schema type, fetch the JSON schema and save it
 schemaTypes.forEach(type => {
     getJSONschema(type);
-    saveJSONSchema()
+    saveJSONSchema();
 });
 
