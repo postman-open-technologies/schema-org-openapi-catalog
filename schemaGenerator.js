@@ -4,6 +4,11 @@ const baseURL = "https://schema.org/";
 const schemaTemplate = {
 };
 
+// Filter out all of the schema types present in the file data
+schemaTypes = data['@graph'].filter(item => {
+    return item['@type'] == 'rdfs:Class' && item['rdfs:subClassOf'] && item['rdfs:subClassOf']['@id'] !== 'schema:Enumeration';
+})
+
 // Function is to collate all of the enumeration values of an enum
 const getEnumerations = (x) => {
     let enumArray =[];
@@ -58,12 +63,7 @@ const checkDataType = (x) => {
     return tempType;
 } 
 
-// Filter out all of the schema types present in the file data
-schemaTypes = data['@graph'].filter(item => {
-    return item['@type'] == 'rdfs:Class' && item['rdfs:subClassOf'] && item['rdfs:subClassOf']['@id'] !== 'schema:Enumeration';
-})
-
-console.log('----Number of Schema Types', schemaTypes.length)
+// console.log('----Number of Schema Types', schemaTypes.length)
 /**
  * 
  * @param {object} schemaProperties an array of properties of a schema type
@@ -80,8 +80,10 @@ const getPropertyType = (schemaProperties) => {
         if(Array.isArray(prop['schema:rangeIncludes'])){
             properties[prop['rdfs:label']]['oneOf'] =[];
             prop['schema:rangeIncludes'].forEach(item => {
-                propertyType = checkDataType(Object.values(item))
-                properties[prop['rdfs:label']]['oneOf'].push(propertyType);
+                propertyType = checkDataType(Object.values(item));
+                if(Object.keys(propertyType).length !== 0){
+                    properties[prop['rdfs:label']]['oneOf'].push(propertyType);
+                }
             })
         }
         else{
@@ -176,4 +178,3 @@ schemaTypes.forEach(type => {
     console.log('--------result of getJSONSchema', res);
     saveJSONSchema(type['rdfs:label']);
 });
-
