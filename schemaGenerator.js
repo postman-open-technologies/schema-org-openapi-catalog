@@ -1,18 +1,14 @@
-// The file contains only 
-const data = require('./schemaorg-all-https.json');
+import { constants, access, readFile, writeFile } from 'fs/promises'; // Import fs promises module for async file operations
+
 const baseURL = "https://schema.org/";
-const schemaTemplate = {
-};
+const schemaTemplate = {};
+let data;
+const userInput = process.argv[2];
 
-// Filter out all of the schema types present in the file data
-schemaTypes = data['@graph'].filter(item => {
-    return item['@type'] == 'rdfs:Class' && item['rdfs:subClassOf'] && item['rdfs:subClassOf']['@id'] !== 'schema:Enumeration';
-})
 
-// Function is to collate all of the enumeration values of an enum
+// Collate all of the enumeration values of an enum
 const getEnumerations = (x) => {
     let enumArray =[];
-    let msg = 'Data type is another schema type';
     data['@graph'].forEach(item => {
         if(item['@id'] === x){
             if(item['@type'] === 'rdfs:Class' && item['rdfs:subClassOf'] && item['rdfs:subClassOf']['@id'] === 'schema:Enumeration'){
@@ -55,15 +51,14 @@ const checkDataType = (x) => {
             tempType['type'] = "integer";
             break;
         default:
-            const result = getEnumerations(x.join())
-            result.length?
-                tempType['enum'] = result:
+            const allEnums = getEnumerations(x.join())
+            allEnums.length?
+                tempType['enum'] = allEnums:
             console.log('RangeInclude contain another Schema type');
     }
     return tempType;
 } 
 
-// console.log('----Number of Schema Types', schemaTypes.length)
 /**
  * 
  * @param {object} schemaProperties an array of properties of a schema type
@@ -72,6 +67,7 @@ const checkDataType = (x) => {
 
 const getPropertyType = (schemaProperties) => {
     let properties = {};
+    let propertyType;
     schemaProperties.forEach(prop => {
         properties[prop['rdfs:label']] ={};
         properties[prop['rdfs:label']]['description'] = prop['rdfs:comment'];
@@ -101,21 +97,17 @@ const getPropertyType = (schemaProperties) => {
  */
 
 const getProperties = typeName => {
-    console.log('typeName----------->', typeName)
     const schemaProperties = data['@graph'].filter(item => {
         const domainIncludes = item['schema:domainIncludes'];
         if(item['@type'] == 'rdf:Property'){
-            // console.log('-------------------item[@type]>>>>>>>>>>',item['@type'])
             if(Array.isArray(domainIncludes)){
                 return domainIncludes.some(item => item['@id'] === typeName);
             }
             else {
-                console.log('item to review------', item)
                 return domainIncludes && domainIncludes['@id'] === typeName;
             }
         }
     })
-    console.log('-----------schemaProperties---', schemaProperties)
     return getPropertyType(schemaProperties);
 }
 
@@ -127,6 +119,7 @@ const getProperties = typeName => {
 const getJSONschema = type => {
     schemaTemplate['$id'] = baseURL+type['rdfs:label']+'.json'
     schemaTemplate['title'] = type['rdfs:label'];
+    console.log(type['rdfs:label'])
     schemaTemplate['description'] = type['rdfs:comment']
     if(type['rdfs:subClassOf']){
         schemaTemplate['allOf'] = [];
@@ -146,35 +139,62 @@ const getJSONschema = type => {
 }
 
 // Add the JSON schema generated in a collated schemas' file
-const saveJSONSchema = (typeName) => {
-    console.log('----received type in save function---', typeName)
-    const fs = require('fs');
-    // const file = fs.readFileSync('outputSchemas.json')
-    // if (file.length == 0) {
-        const schemaVersion = {"$schema": "https://json-schema.org/draft/2020-12/schema"};
-        const updatedContent = Object.assign({},schemaVersion, schemaTemplate )
-        try{
-            fs.writeFileSync(`./OutputFiles/${typeName}.json`, JSON.stringify(updatedContent));
-        }
-        catch(err){
-            console.log(err);
-        }
-    // } else {
-    //     var fileContent = JSON.parse(file);
-    //     var updatedContent = Object.assign({}, fileContent, schemaTemplate);
-    //     try{
-    //         fs.writeFileSync("outputSchemas.json", JSON.stringify(updatedContent));
-    //         console.log("JSON schema saved in the output file");
-    //     }
-    //     catch(err){
-    //         console.log(err);
-    //     }
-    // }
+const saveJSONSchema = async (typeName) => {
+    const schemaVersion = {"$schema": "https://json-schema.org/draft/2020-12/schema"};
+    const updatedContent = Object.assign({},schemaVersion, schemaTemplate );
+    try{
+        const promise = writeFile(userInput === 'All schema org types' ? `./OutputFiles/${typeName}.json`: `./SingularOutputFiles/${typeName}.json`, JSON.stringify(updatedContent));
+        await promise;
+    }
+    catch(err){
+        console.log(err);
+    }
+
 }
 
+// Initial step to process the user input and filter all the schema org types, build JSON schema for every schema org type
+const main = async () => {
+    const checkFileAccess = async (fileReference) => {
+        try {
+            await access(fileReference, constants.R_OK);
+            console.log('Reference JSON-LD file found');
+            return true;
+        } catch {
+            console.error('Reference JSON-LD file is missing!');
+            return false;
+        }
+    };
+    const getFileData = async(fileReference) => {
+        if(checkFileAccess(fileReference)){
+            const fileData = await readFile(fileReference, 'utf8');
+            return JSON.parse(fileData);
+        }
+        else{
+            return null;
+        }
+    }
+    if (userInput === 'All schema org types') {
+        data = await getFileData('./InputFiles/schemaorg-all-https.json', 'utf8');
+    } else if (userInput) {
+        data = await getFileData('./InputFiles/' + `${userInput}` + '.json', 'utf8');
+    }
+
+    if(!data){
+        console.error('File data not available');
+        return;
+    }
+
+    const schemaTypes = data['@graph'].filter(item => {
+        return item['@type'] == 'rdfs:Class' && item['rdfs:subClassOf'] && item['rdfs:subClassOf']['@id'] !== 'schema:Enumeration';
+    })
+    
+    console.log('Number of schema types--->>>', schemaTypes.length)
+
 // For every schema type, fetch the JSON schema and save it
-schemaTypes.forEach(type => {
-    const res = getJSONschema(type);
-    console.log('--------result of getJSONSchema', res);
-    saveJSONSchema(type['rdfs:label']);
-});
+    schemaTypes.forEach(type => {
+        getJSONschema(type);
+        saveJSONSchema(type['rdfs:label']);
+    });
+};
+
+main();
