@@ -132,6 +132,8 @@ const getJSONschema = type => {
         else{
             schemaTemplate.allOf.push({'$ref':Object.values(type['rdfs:subClassOf'])+'.json'})
         }
+    } else{
+        return;
     }
     schemaTemplate['type'] = 'object'
     schemaTemplate['properties'] = getProperties(type['@id'])
@@ -151,6 +153,14 @@ const saveJSONSchema = async (typeName) => {
     }
 
 }
+
+const filterData = async(data) => {
+        return data['@graph'].filter((item) => {
+        const notSuperseded = !item['schema:supersededBy'];
+        const notMetaSchema = !item['schema:isPartOf'] || (item['schema:isPartOf']['@id'] !== 'https://meta.schema.org')
+        return notSuperseded && notMetaSchema;
+    })
+};
 
 // Initial step to process the user input and filter all the schema org types, build JSON schema for every schema org type
 const main = async () => {
@@ -174,7 +184,7 @@ const main = async () => {
         }
     }
     if (userInput === 'All schema org types') {
-        data = await getFileData('./InputFiles/schemaorg-all-https.json', 'utf8');
+        data = await getFileData('./InputFiles/schemaorg-current-https.json', 'utf8');
     } else if (userInput) {
         data = await getFileData('./InputFiles/' + `${userInput}` + '.json', 'utf8');
     }
@@ -184,9 +194,20 @@ const main = async () => {
         return;
     }
 
-    const schemaTypes = data['@graph'].filter(item => {
-        return item['@type'] == 'rdfs:Class' && item['rdfs:subClassOf'] && item['rdfs:subClassOf']['@id'] !== 'schema:Enumeration';
+    const filteredData = await filterData(data);
+
+    const schemaTypes = filteredData.filter(item => {
+        const isRdfsClass = item['@type'] === 'rdfs:Class';
+        const hasSubClass = item['rdfs:subClassOf'];
+        return isRdfsClass && (hasSubClass ? item['rdfs:subClassOf']['@id'] !== 'schema:Enumeration': item);
     })
+
+    // const schemaTypes = data['@graph'].filter(item => {
+    //     const isRdfsClass = item['@type'] === 'rdfs:Class';
+    //     // const validSubClassOf = item['rdfs:subClassOf'];
+    //     const hasValidIsPartOf = !item['schema:isPartOf'] ;
+    //     return isRdfsClass && validSubClassOf && hasValidIsPartOf;
+    // })
     
     console.log('Number of schema types--->>>', schemaTypes.length)
 
