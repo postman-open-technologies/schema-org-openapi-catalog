@@ -3,8 +3,8 @@ import { constants, access, readFile, writeFile } from 'fs/promises'; // Import 
 const baseURL = "https://schema.org/";
 const schemaTemplate = {};
 let data;
+let filteredData;
 const userInput = process.argv[2];
-
 
 // Collate all of the enumeration values of an enum
 const getEnumerations = (x) => {
@@ -96,8 +96,8 @@ const getPropertyType = (schemaProperties) => {
  * @returns 
  */
 
-const getProperties = typeName => {
-    const schemaProperties = data['@graph'].filter(item => {
+const getProperties = (typeName, filteredData) => {
+    const schemaProperties = filteredData.filter(item => {
         const domainIncludes = item['schema:domainIncludes'];
         if(item['@type'] == 'rdf:Property'){
             if(Array.isArray(domainIncludes)){
@@ -116,10 +116,9 @@ const getProperties = typeName => {
  * @param {object} type schema type 
  */
 
-const getJSONschema = type => {
-    schemaTemplate['$id'] = baseURL+type['rdfs:label']+'.json'
+const getJSONschema = (type, filteredData) => {
+    schemaTemplate['$id'] = baseURL+type['rdfs:label']+'.json';
     schemaTemplate['title'] = type['rdfs:label'];
-    console.log(type['rdfs:label'])
     schemaTemplate['description'] = type['rdfs:comment']
     if(type['rdfs:subClassOf']){
         schemaTemplate['allOf'] = [];
@@ -136,7 +135,7 @@ const getJSONschema = type => {
         return;
     }
     schemaTemplate['type'] = 'object'
-    schemaTemplate['properties'] = getProperties(type['@id'])
+    schemaTemplate['properties'] = getProperties(type['@id'], filteredData)
     return schemaTemplate;
 }
 
@@ -167,7 +166,6 @@ const main = async () => {
     const checkFileAccess = async (fileReference) => {
         try {
             await access(fileReference, constants.R_OK);
-            console.log('Reference JSON-LD file found');
             return true;
         } catch {
             console.error('Reference JSON-LD file is missing!');
@@ -194,7 +192,7 @@ const main = async () => {
         return;
     }
 
-    const filteredData = await filterData(data);
+    filteredData = await filterData(data);
 
     const schemaTypes = filteredData.filter(item => {
         const isRdfsClass = item['@type'] === 'rdfs:Class';
@@ -202,18 +200,11 @@ const main = async () => {
         return isRdfsClass && (hasSubClass ? item['rdfs:subClassOf']['@id'] !== 'schema:Enumeration': item);
     })
 
-    // const schemaTypes = data['@graph'].filter(item => {
-    //     const isRdfsClass = item['@type'] === 'rdfs:Class';
-    //     // const validSubClassOf = item['rdfs:subClassOf'];
-    //     const hasValidIsPartOf = !item['schema:isPartOf'] ;
-    //     return isRdfsClass && validSubClassOf && hasValidIsPartOf;
-    // })
-    
     console.log('Number of schema types--->>>', schemaTypes.length)
 
 // For every schema type, fetch the JSON schema and save it
     schemaTypes.forEach(type => {
-        getJSONschema(type);
+        getJSONschema(type, filteredData);
         saveJSONSchema(type['rdfs:label']);
     });
 };
