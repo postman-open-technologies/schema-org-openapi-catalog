@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Mountain.json","title":"Mountain","description":"A mountain, like Mount Whitney or Mount Everest.","allOf":[{"$ref":"schema:Landform.json"}],"type":"object","properties":{}}

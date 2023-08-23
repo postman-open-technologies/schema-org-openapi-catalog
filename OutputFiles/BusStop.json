@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/BusStop.json","title":"BusStop","description":"A bus stop.","allOf":[{"$ref":"schema:CivicStructure.json"}],"type":"object","properties":{}}

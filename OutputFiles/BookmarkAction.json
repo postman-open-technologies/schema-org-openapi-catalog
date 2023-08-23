@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/BookmarkAction.json","title":"BookmarkAction","description":"An agent bookmarks/flags/labels/tags/marks an object.","allOf":[{"$ref":"schema:OrganizeAction.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/RealEstateAgent.json","title":"RealEstateAgent","description":"A real-estate agent.","allOf":[{"$ref":"schema:LocalBusiness.json"}],"type":"object","properties":{}}

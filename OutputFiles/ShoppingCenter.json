@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ShoppingCenter.json","title":"ShoppingCenter","description":"A shopping center or mall.","allOf":[{"$ref":"schema:LocalBusiness.json"}],"type":"object","properties":{}}

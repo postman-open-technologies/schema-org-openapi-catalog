@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Embassy.json","title":"Embassy","description":"An embassy.","allOf":[{"$ref":"schema:GovernmentBuilding.json"}],"type":"object","properties":{}}

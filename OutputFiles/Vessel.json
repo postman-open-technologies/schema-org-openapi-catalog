@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Vessel.json","title":"Vessel","description":"A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.","allOf":[{"$ref":"schema:AnatomicalStructure.json"}],"type":"object","properties":{}}

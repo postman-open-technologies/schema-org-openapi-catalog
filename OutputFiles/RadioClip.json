@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/RadioClip.json","title":"RadioClip","description":"A short radio program or a segment/part of a radio program.","allOf":[{"$ref":"schema:Clip.json"}],"type":"object","properties":{}}

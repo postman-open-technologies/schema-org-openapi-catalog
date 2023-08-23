@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SaleEvent.json","title":"SaleEvent","description":"Event type: Sales event.","allOf":[{"$ref":"schema:Event.json"}],"type":"object","properties":{}}

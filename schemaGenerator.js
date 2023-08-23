@@ -1,10 +1,32 @@
-import { constants, access, readFile, writeFile } from 'fs/promises'; // Import fs promises module for async file operations
+ // Import fs promises module for async file operations
+import { constants, access, readFile, writeFile } from 'fs/promises';
 
 const baseURL = "https://schema.org/";
 const schemaTemplate = {};
-let data;
-let filteredData;
+let data, filteredData;
 const userInput = process.argv[2];
+
+// Extract title for the schema type or the property
+const getTitle = (type) => {
+    console.log('-----Type in getTitle', type)
+    if(type['rdfs:label']['@value']){
+        return type['rdfs:label']['@value'];
+    }
+    else{
+        return type['rdfs:label']
+    }
+}
+
+// Extract description for the schema type or the property
+const getDescription = (type) => {
+    console.log('----Property', type)
+    if(type['rdfs:comment']['@value']){
+        return type['rdfs:comment']['@value'];
+    }
+    else{
+        return type['rdfs:comment']
+    }
+}
 
 // Collate all of the enumeration values of an enum
 const getEnumerations = (x) => {
@@ -70,7 +92,7 @@ const getPropertyType = (schemaProperties) => {
     let propertyType;
     schemaProperties.forEach(prop => {
         properties[prop['rdfs:label']] ={};
-        properties[prop['rdfs:label']]['description'] = prop['rdfs:comment'];
+        properties[prop['rdfs:label']]['description'] = getDescription(prop);
         
         // If rangeIncludes contain more than 1 data types
         if(Array.isArray(prop['schema:rangeIncludes'])){
@@ -117,9 +139,13 @@ const getProperties = (typeName, filteredData) => {
  */
 
 const getJSONschema = (type, filteredData) => {
-    schemaTemplate['$id'] = baseURL+type['rdfs:label']+'.json';
-    schemaTemplate['title'] = type['rdfs:label'];
-    schemaTemplate['description'] = type['rdfs:comment']
+    const schemaTypeLabel = getTitle(type);
+    const schemaTypeDescription = getDescription(type);
+
+    schemaTemplate['$id'] = baseURL+schemaTypeLabel+'.json';
+    schemaTemplate['title'] = schemaTypeLabel;
+    schemaTemplate['description'] = schemaTypeDescription;
+
     if(type['rdfs:subClassOf']){
         schemaTemplate['allOf'] = [];
         // If the current type is subclass of more than 1 classes
@@ -200,12 +226,10 @@ const main = async () => {
         return isRdfsClass && (hasSubClass ? item['rdfs:subClassOf']['@id'] !== 'schema:Enumeration': item);
     })
 
-    console.log('Number of schema types--->>>', schemaTypes.length)
-
 // For every schema type, fetch the JSON schema and save it
     schemaTypes.forEach(type => {
         getJSONschema(type, filteredData);
-        saveJSONSchema(type['rdfs:label']);
+        saveJSONSchema(getTitle(type));
     });
 };
 

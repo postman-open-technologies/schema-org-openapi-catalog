@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/GasStation.json","title":"GasStation","description":"A gas station.","allOf":[{"$ref":"schema:AutomotiveBusiness.json"}],"type":"object","properties":{}}

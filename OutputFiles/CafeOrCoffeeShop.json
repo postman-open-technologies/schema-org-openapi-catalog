@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/CafeOrCoffeeShop.json","title":"CafeOrCoffeeShop","description":"A cafe or coffee shop.","allOf":[{"$ref":"schema:FoodEstablishment.json"}],"type":"object","properties":{}}

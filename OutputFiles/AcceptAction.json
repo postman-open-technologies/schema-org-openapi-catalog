@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/AcceptAction.json","title":"AcceptAction","description":"The act of committing to/adopting an object.\\n\\nRelated actions:\\n\\n* [[RejectAction]]: The antonym of AcceptAction.","allOf":[{"$ref":"schema:AllocateAction.json"}],"type":"object","properties":{}}

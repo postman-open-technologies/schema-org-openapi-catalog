@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/GovernmentBuilding.json","title":"GovernmentBuilding","description":"A government building.","allOf":[{"$ref":"schema:CivicStructure.json"}],"type":"object","properties":{}}

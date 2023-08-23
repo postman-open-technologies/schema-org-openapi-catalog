@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Festival.json","title":"Festival","description":"Event type: Festival.","allOf":[{"$ref":"schema:Event.json"}],"type":"object","properties":{}}

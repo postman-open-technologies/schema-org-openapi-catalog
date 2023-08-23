@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SubwayStation.json","title":"SubwayStation","description":"A subway station.","allOf":[{"$ref":"schema:CivicStructure.json"}],"type":"object","properties":{}}

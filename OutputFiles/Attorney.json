@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Attorney.json","title":"Attorney","description":"Professional service: Attorney. \\n\\nThis type is deprecated - [[LegalService]] is more inclusive and less ambiguous.","allOf":[{"$ref":"schema:LegalService.json"}],"type":"object","properties":{}}

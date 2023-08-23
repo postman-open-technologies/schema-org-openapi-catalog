@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ElectronicsStore.json","title":"ElectronicsStore","description":"An electronics store.","allOf":[{"$ref":"schema:Store.json"}],"type":"object","properties":{}}

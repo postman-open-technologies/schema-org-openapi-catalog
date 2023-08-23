@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Intangible.json","title":"Intangible","description":"A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc.","allOf":[{"$ref":"schema:Thing.json"}],"type":"object","properties":{}}

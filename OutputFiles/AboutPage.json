@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/AboutPage.json","title":"AboutPage","description":"Web page type: About page.","allOf":[{"$ref":"schema:WebPage.json"}],"type":"object","properties":{}}

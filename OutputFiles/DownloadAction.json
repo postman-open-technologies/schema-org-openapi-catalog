@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/DownloadAction.json","title":"DownloadAction","description":"The act of downloading an object.","allOf":[{"$ref":"schema:TransferAction.json"}],"type":"object","properties":{}}

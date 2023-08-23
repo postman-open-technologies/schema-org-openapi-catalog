@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MedicineSystem.json","title":"MedicineSystem","description":"Systems of medical practice.","allOf":[{"$ref":"schema:MedicalEnumeration.json"}],"type":"object","properties":{}}

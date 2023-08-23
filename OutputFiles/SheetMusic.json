@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SheetMusic.json","title":"SheetMusic","description":"Printed music, as opposed to performed or recorded music.","allOf":[{"$ref":"schema:CreativeWork.json"}],"type":"object","properties":{}}

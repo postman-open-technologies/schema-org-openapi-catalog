@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Sculpture.json","title":"Sculpture","description":"A piece of sculpture.","allOf":[{"$ref":"schema:CreativeWork.json"}],"type":"object","properties":{}}

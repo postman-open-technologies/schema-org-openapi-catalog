@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Collection.json","title":"Collection","description":"A collection of items, e.g. creative works or products.","allOf":[{"$ref":"schema:CreativeWork.json"}],"type":"object","properties":{"[object Object]":{"description":"The number of items in the [[Collection]].","type":"integer"}}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Bone.json","title":"Bone","description":"Rigid connective tissue that comprises up the skeletal structure of the human body.","allOf":[{"$ref":"schema:AnatomicalStructure.json"}],"type":"object","properties":{}}

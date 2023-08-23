@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Distance.json","title":"Distance","description":"Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'. E.g., '7 ft'.","allOf":[{"$ref":"schema:Quantity.json"}],"type":"object","properties":{}}

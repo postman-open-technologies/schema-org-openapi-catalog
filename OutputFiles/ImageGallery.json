@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ImageGallery.json","title":"ImageGallery","description":"Web page type: Image gallery page.","allOf":[{"$ref":"schema:MediaGallery.json"}],"type":"object","properties":{}}

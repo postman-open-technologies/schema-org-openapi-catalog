@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Residence.json","title":"Residence","description":"The place where a person lives.","allOf":[{"$ref":"schema:Place.json"}],"type":"object","properties":{"accommodationFloorPlan":{"description":"A floorplan of some [[Accommodation]]."}}}

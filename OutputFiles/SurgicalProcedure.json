@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SurgicalProcedure.json","title":"SurgicalProcedure","description":"A medical procedure involving an incision with instruments; performed for diagnose, or therapeutic purposes.","allOf":[{"$ref":"schema:MedicalProcedure.json"}],"type":"object","properties":{}}

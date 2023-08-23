@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/VacationRental.json","title":"VacationRental","description":"A kind of lodging business that focuses on renting single properties for limited time.","allOf":[{"$ref":"schema:LodgingBusiness.json"}],"type":"object","properties":{}}

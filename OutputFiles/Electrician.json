@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Electrician.json","title":"Electrician","description":"An electrician.","allOf":[{"$ref":"schema:HomeAndConstructionBusiness.json"}],"type":"object","properties":{}}

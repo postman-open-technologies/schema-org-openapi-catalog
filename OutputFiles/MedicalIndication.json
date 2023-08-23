@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MedicalIndication.json","title":"MedicalIndication","description":"A condition or factor that indicates use of a medical therapy, including signs, symptoms, risk factors, anatomical states, etc.","allOf":[{"$ref":"schema:MedicalEntity.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/HealthClub.json","title":"HealthClub","description":"A health club.","allOf":[{"$ref":"schema:HealthAndBeautyBusiness.json"},{"$ref":"schema:SportsActivityLocation.json"}],"type":"object","properties":{}}

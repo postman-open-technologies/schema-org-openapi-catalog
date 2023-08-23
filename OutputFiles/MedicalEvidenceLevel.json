@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MedicalEvidenceLevel.json","title":"MedicalEvidenceLevel","description":"Level of evidence for a medical guideline. Enumerated type.","allOf":[{"$ref":"schema:MedicalEnumeration.json"}],"type":"object","properties":{}}

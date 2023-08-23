@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ArriveAction.json","title":"ArriveAction","description":"The act of arriving at a place. An agent arrives at a destination from a fromLocation, optionally with participants.","allOf":[{"$ref":"schema:MoveAction.json"}],"type":"object","properties":{}}

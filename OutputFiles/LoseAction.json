@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/LoseAction.json","title":"LoseAction","description":"The act of being defeated in a competitive activity.","allOf":[{"$ref":"schema:AchieveAction.json"}],"type":"object","properties":{"winner":{"description":"A sub property of participant. The winner of the action."}}}

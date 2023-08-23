@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Zoo.json","title":"Zoo","description":"A zoo.","allOf":[{"$ref":"schema:CivicStructure.json"}],"type":"object","properties":{}}

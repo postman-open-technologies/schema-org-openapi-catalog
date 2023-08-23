@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/PoliticalParty.json","title":"PoliticalParty","description":"Organization: Political Party.","allOf":[{"$ref":"schema:Organization.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/DiscussionForumPosting.json","title":"DiscussionForumPosting","description":"A posting to a discussion forum.","allOf":[{"$ref":"schema:SocialMediaPosting.json"}],"type":"object","properties":{}}

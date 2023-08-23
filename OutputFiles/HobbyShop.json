@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/HobbyShop.json","title":"HobbyShop","description":"A store that sells materials useful or necessary for various hobbies.","allOf":[{"$ref":"schema:Store.json"}],"type":"object","properties":{}}

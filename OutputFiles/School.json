@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/School.json","title":"School","description":"A school.","allOf":[{"$ref":"schema:EducationalOrganization.json"}],"type":"object","properties":{}}

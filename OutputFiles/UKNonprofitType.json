@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/UKNonprofitType.json","title":"UKNonprofitType","description":"UKNonprofitType: Non-profit organization type originating from the United Kingdom.","allOf":[{"$ref":"schema:NonprofitType.json"}],"type":"object","properties":{}}

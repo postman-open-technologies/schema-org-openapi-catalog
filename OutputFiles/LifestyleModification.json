@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/LifestyleModification.json","title":"LifestyleModification","description":"A process of care involving exercise, changes to diet, fitness routines, and other lifestyle changes aimed at improving a health condition.","allOf":[{"$ref":"schema:MedicalEntity.json"}],"type":"object","properties":{}}

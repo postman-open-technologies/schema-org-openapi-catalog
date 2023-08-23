@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/WPFooter.json","title":"WPFooter","description":"The footer section of the page.","allOf":[{"$ref":"schema:WebPageElement.json"}],"type":"object","properties":{}}

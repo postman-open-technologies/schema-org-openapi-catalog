@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/XPathType.json","title":"XPathType","description":"Text representing an XPath (typically but not necessarily version 1.0).","allOf":[{"$ref":"schema:Text.json"}],"type":"object","properties":{}}

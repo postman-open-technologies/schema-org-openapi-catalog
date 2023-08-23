@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/TreatmentIndication.json","title":"TreatmentIndication","description":"An indication for treating an underlying condition, symptom, etc.","allOf":[{"$ref":"schema:MedicalIndication.json"}],"type":"object","properties":{}}

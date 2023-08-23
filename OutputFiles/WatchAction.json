@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/WatchAction.json","title":"WatchAction","description":"The act of consuming dynamic/moving visual content.","allOf":[{"$ref":"schema:ConsumeAction.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/AutoPartsStore.json","title":"AutoPartsStore","description":"An auto parts store.","allOf":[{"$ref":"schema:AutomotiveBusiness.json"},{"$ref":"schema:Store.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/WPSideBar.json","title":"WPSideBar","description":"A sidebar section of the page.","allOf":[{"$ref":"schema:WebPageElement.json"}],"type":"object","properties":{}}

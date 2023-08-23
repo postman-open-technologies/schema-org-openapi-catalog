@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/DepartAction.json","title":"DepartAction","description":"The act of  departing from a place. An agent departs from a fromLocation for a destination, optionally with participants.","allOf":[{"$ref":"schema:MoveAction.json"}],"type":"object","properties":{}}

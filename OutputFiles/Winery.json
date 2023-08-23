@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Winery.json","title":"Winery","description":"A winery.","allOf":[{"$ref":"schema:FoodEstablishment.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Museum.json","title":"Museum","description":"A museum.","allOf":[{"$ref":"schema:CivicStructure.json"}],"type":"object","properties":{}}

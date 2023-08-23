@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/StructuredValue.json","title":"StructuredValue","description":"Structured values are used when the value of a property has a more complex structure than simply being a textual value or a reference to another thing.","allOf":[{"$ref":"schema:Intangible.json"}],"type":"object","properties":{}}

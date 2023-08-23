@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Waterfall.json","title":"Waterfall","description":"A waterfall, like Niagara.","allOf":[{"$ref":"schema:BodyOfWater.json"}],"type":"object","properties":{}}

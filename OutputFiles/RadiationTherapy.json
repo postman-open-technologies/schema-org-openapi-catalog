@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/RadiationTherapy.json","title":"RadiationTherapy","description":"A process of care using radiation aimed at improving a health condition.","allOf":[{"$ref":"schema:MedicalTherapy.json"}],"type":"object","properties":{}}

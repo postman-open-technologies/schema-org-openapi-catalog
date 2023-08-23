@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/InstallAction.json","title":"InstallAction","description":"The act of installing an application.","allOf":[{"$ref":"schema:ConsumeAction.json"}],"type":"object","properties":{}}

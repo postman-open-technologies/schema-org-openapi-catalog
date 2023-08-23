@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/CollegeOrUniversity.json","title":"CollegeOrUniversity","description":"A college, university, or other third-level educational institution.","allOf":[{"$ref":"schema:EducationalOrganization.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SocialEvent.json","title":"SocialEvent","description":"Event type: Social event.","allOf":[{"$ref":"schema:Event.json"}],"type":"object","properties":{}}

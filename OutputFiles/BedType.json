@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/BedType.json","title":"BedType","description":"A type of bed. This is used for indicating the bed or beds available in an accommodation.","allOf":[{"$ref":"schema:QualitativeValue.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/FireStation.json","title":"FireStation","description":"A fire station. With firemen.","allOf":[{"$ref":"schema:CivicStructure.json"},{"$ref":"schema:EmergencyService.json"}],"type":"object","properties":{}}

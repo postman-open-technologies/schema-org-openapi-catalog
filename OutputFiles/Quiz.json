@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Quiz.json","title":"Quiz","description":"Quiz: A test of knowledge, skills and abilities.","allOf":[{"$ref":"schema:LearningResource.json"}],"type":"object","properties":{}}

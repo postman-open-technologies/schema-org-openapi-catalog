@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/AchieveAction.json","title":"AchieveAction","description":"The act of accomplishing something via previous efforts. It is an instantaneous action rather than an ongoing process.","allOf":[{"$ref":"schema:Action.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MedicalSymptom.json","title":"MedicalSymptom","description":"Any complaint sensed and expressed by the patient (therefore defined as subjective)  like stomachache, lower-back pain, or fatigue.","allOf":[{"$ref":"schema:MedicalSignOrSymptom.json"}],"type":"object","properties":{}}

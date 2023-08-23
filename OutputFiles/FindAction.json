@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/FindAction.json","title":"FindAction","description":"The act of finding an object.\\n\\nRelated actions:\\n\\n* [[SearchAction]]: FindAction is generally lead by a SearchAction, but not necessarily.","allOf":[{"$ref":"schema:Action.json"}],"type":"object","properties":{}}

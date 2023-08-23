@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/CancelAction.json","title":"CancelAction","description":"The act of asserting that a future event/action is no longer going to happen.\\n\\nRelated actions:\\n\\n* [[ConfirmAction]]: The antonym of CancelAction.","allOf":[{"$ref":"schema:PlanAction.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/TelevisionChannel.json","title":"TelevisionChannel","description":"A unique instance of a television BroadcastService on a CableOrSatelliteService lineup.","allOf":[{"$ref":"schema:BroadcastChannel.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MovieTheater.json","title":"MovieTheater","description":"A movie theater.","allOf":[{"$ref":"schema:CivicStructure.json"},{"$ref":"schema:EntertainmentBusiness.json"}],"type":"object","properties":{"screenCount":{"description":"The number of screens in the movie theater.","type":"number"}}}

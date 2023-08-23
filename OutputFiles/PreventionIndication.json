@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/PreventionIndication.json","title":"PreventionIndication","description":"An indication for preventing an underlying condition, symptom, etc.","allOf":[{"$ref":"schema:MedicalIndication.json"}],"type":"object","properties":{}}

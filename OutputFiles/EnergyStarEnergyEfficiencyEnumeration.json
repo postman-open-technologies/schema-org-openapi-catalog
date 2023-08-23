@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/EnergyStarEnergyEfficiencyEnumeration.json","title":"EnergyStarEnergyEfficiencyEnumeration","description":"Used to indicate whether a product is EnergyStar certified.","allOf":[{"$ref":"schema:EnergyEfficiencyEnumeration.json"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/DrinkAction.json","title":"DrinkAction","description":"The act of swallowing liquids.","allOf":[{"$ref":"schema:ConsumeAction.json"}],"type":"object","properties":{}}
