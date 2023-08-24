@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/BarOrPub.json","title":"BarOrPub","description":"A bar or pub.","allOf":[{"$ref":"schema:FoodEstablishment.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/BarOrPub.json","title":"BarOrPub","description":"A bar or pub.","allOf":[{"super":"schema:FoodEstablishment"}],"type":"object","properties":{}}

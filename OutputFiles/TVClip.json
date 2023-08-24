@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/TVClip.json","title":"TVClip","description":"A short TV program or a segment/part of a TV program.","allOf":[{"$ref":"schema:Clip.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/TVClip.json","title":"TVClip","description":"A short TV program or a segment/part of a TV program.","allOf":[{"super":"schema:Clip"}],"type":"object","properties":{}}

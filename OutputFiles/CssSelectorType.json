@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/CssSelectorType.json","title":"CssSelectorType","description":"Text representing a CSS selector.","allOf":[{"$ref":"schema:Text.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/CssSelectorType.json","title":"CssSelectorType","description":"Text representing a CSS selector.","allOf":[{"super":"schema:Text"}],"type":"object","properties":{}}

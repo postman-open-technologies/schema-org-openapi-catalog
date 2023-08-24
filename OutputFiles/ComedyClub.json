@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ComedyClub.json","title":"ComedyClub","description":"A comedy club.","allOf":[{"$ref":"schema:EntertainmentBusiness.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ComedyClub.json","title":"ComedyClub","description":"A comedy club.","allOf":[{"super":"schema:EntertainmentBusiness"}],"type":"object","properties":{}}

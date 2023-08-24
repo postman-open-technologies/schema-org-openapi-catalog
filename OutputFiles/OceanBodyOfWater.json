@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/OceanBodyOfWater.json","title":"OceanBodyOfWater","description":"An ocean (for example, the Pacific).","allOf":[{"$ref":"schema:BodyOfWater.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/OceanBodyOfWater.json","title":"OceanBodyOfWater","description":"An ocean (for example, the Pacific).","allOf":[{"super":"schema:BodyOfWater"}],"type":"object","properties":{}}

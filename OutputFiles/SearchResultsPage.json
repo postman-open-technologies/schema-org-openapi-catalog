@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SearchResultsPage.json","title":"SearchResultsPage","description":"Web page type: Search results page.","allOf":[{"$ref":"schema:WebPage.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SearchResultsPage.json","title":"SearchResultsPage","description":"Web page type: Search results page.","allOf":[{"super":"schema:WebPage"}],"type":"object","properties":{}}

@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/State.json","title":"State","description":"A state or province of a country.","allOf":[{"$ref":"schema:AdministrativeArea.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/State.json","title":"State","description":"A state or province of a country.","allOf":[{"super":"schema:AdministrativeArea"}],"type":"object","properties":{}}

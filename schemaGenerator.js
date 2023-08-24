@@ -8,7 +8,6 @@ const userInput = process.argv[2];
 
 // Extract title for the schema type or the property
 const getTitle = (type) => {
-    console.log('-----Type in getTitle', type)
     if(type['rdfs:label']['@value']){
         return type['rdfs:label']['@value'];
     }
@@ -19,7 +18,6 @@ const getTitle = (type) => {
 
 // Extract description for the schema type or the property
 const getDescription = (type) => {
-    console.log('----Property', type)
     if(type['rdfs:comment']['@value']){
         return type['rdfs:comment']['@value'];
     }
@@ -76,7 +74,7 @@ const checkDataType = (x) => {
             const allEnums = getEnumerations(x.join())
             allEnums.length?
                 tempType['enum'] = allEnums:
-            console.log('RangeInclude contain another Schema type');
+                tempType['schemaType'] = x.toString();
     }
     return tempType;
 } 
@@ -151,15 +149,14 @@ const getJSONschema = (type, filteredData) => {
         // If the current type is subclass of more than 1 classes
         if(Array.isArray(type['rdfs:subClassOf'])){
             type['rdfs:subClassOf'].forEach(item => {
-                schemaTemplate.allOf.push({'$ref':Object.values(item)+'.json'})
+                schemaTemplate.allOf.push({'super':Object.values(item)})
             })
         }
         else{
-            schemaTemplate.allOf.push({'$ref':Object.values(type['rdfs:subClassOf'])+'.json'})
+            schemaTemplate.allOf.push({"super":type['rdfs:subClassOf']['@id'].toString()})
         }
-    } else{
-        return;
-    }
+    } 
+    
     schemaTemplate['type'] = 'object'
     schemaTemplate['properties'] = getProperties(type['@id'], filteredData)
     return schemaTemplate;
@@ -170,7 +167,7 @@ const saveJSONSchema = async (typeName) => {
     const schemaVersion = {"$schema": "https://json-schema.org/draft/2020-12/schema"};
     const updatedContent = Object.assign({},schemaVersion, schemaTemplate );
     try{
-        const promise = writeFile(userInput === 'All schema org types' ? `./OutputFiles/${typeName}.json`: `./SingularOutputFiles/${typeName}.json`, JSON.stringify(updatedContent));
+        const promise = writeFile(userInput === 'All' ? `./OutputFiles/${typeName}.json`: `./SingularOutputFiles/${typeName}.json`, JSON.stringify(updatedContent));
         await promise;
     }
     catch(err){
@@ -179,6 +176,7 @@ const saveJSONSchema = async (typeName) => {
 
 }
 
+// Remove deprecated and meta schema org terms
 const filterData = async(data) => {
         return data['@graph'].filter((item) => {
         const notSuperseded = !item['schema:supersededBy'];
@@ -189,28 +187,38 @@ const filterData = async(data) => {
 
 // Initial step to process the user input and filter all the schema org types, build JSON schema for every schema org type
 const main = async () => {
+    
     const checkFileAccess = async (fileReference) => {
         try {
             await access(fileReference, constants.R_OK);
             return true;
-        } catch {
-            console.error('Reference JSON-LD file is missing!');
+        } catch(error) {            
             return false;
         }
     };
     const getFileData = async(fileReference) => {
-        if(checkFileAccess(fileReference)){
-            const fileData = await readFile(fileReference, 'utf8');
-            return JSON.parse(fileData);
+        try{
+            if(checkFileAccess(fileReference)){
+                const fileData = await readFile(fileReference, 'utf8');
+                return JSON.parse(fileData);
+            }
+            else{
+                return null;
+            }
         }
-        else{
-            return null;
+        catch(error) {
+            if(error.code === 'ENOENT'){
+                console.log('Error: JSON-LD file not present at ' + fileReference + '.\nPlease add JSON-LD file to convert the schema types in JSON schema.');
+            } else{
+                console.error('There is some error occured: ', error);
+            }
+            return false;
         }
     }
-    if (userInput === 'All schema org types') {
-        data = await getFileData('./InputFiles/schemaorg-current-https.json', 'utf8');
-    } else if (userInput) {
-        data = await getFileData('./InputFiles/' + `${userInput}` + '.json', 'utf8');
+    if (userInput === 'All') {
+        data = await getFileData('./InputFiles/schemaorg-current-https.json');
+    } else {
+        data = await getFileData('./InputFiles/' + `${userInput}` + '.json');
     }
 
     if(!data){
@@ -223,7 +231,7 @@ const main = async () => {
     const schemaTypes = filteredData.filter(item => {
         const isRdfsClass = item['@type'] === 'rdfs:Class';
         const hasSubClass = item['rdfs:subClassOf'];
-        return isRdfsClass && (hasSubClass ? item['rdfs:subClassOf']['@id'] !== 'schema:Enumeration': item);
+        return isRdfsClass && (hasSubClass ? item['rdfs:subClassOf']['@id'] !== 'schema:Enumeration': item) ;
     })
 
 // For every schema type, fetch the JSON schema and save it
@@ -231,6 +239,9 @@ const main = async () => {
         getJSONschema(type, filteredData);
         saveJSONSchema(getTitle(type));
     });
+// Output file location
+    userInput === 'All' ? console.log('Output JSON schema file are at this location: schema-org-openapi-catalog/OutputFiles/') 
+    : console.log('Output JSON schema file are at this location: schema-org-openapi-catalog/SingularOutputFiles/');
 };
 
 main();

@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/PerformingGroup.json","title":"PerformingGroup","description":"A performance group, such as a band, an orchestra, or a circus.","allOf":[{"$ref":"schema:Organization.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/PerformingGroup.json","title":"PerformingGroup","description":"A performance group, such as a band, an orchestra, or a circus.","allOf":[{"super":"schema:Organization"}],"type":"object","properties":{}}

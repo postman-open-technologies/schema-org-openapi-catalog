@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/DiscoverAction.json","title":"DiscoverAction","description":"The act of discovering/finding an object.","allOf":[{"$ref":"schema:FindAction.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/DiscoverAction.json","title":"DiscoverAction","description":"The act of discovering/finding an object.","allOf":[{"super":"schema:FindAction"}],"type":"object","properties":{}}

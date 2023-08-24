@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MovieClip.json","title":"MovieClip","description":"A short segment/part of a movie.","allOf":[{"$ref":"schema:Clip.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MovieClip.json","title":"MovieClip","description":"A short segment/part of a movie.","allOf":[{"super":"schema:Clip"}],"type":"object","properties":{}}

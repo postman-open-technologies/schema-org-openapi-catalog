@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MarryAction.json","title":"MarryAction","description":"The act of marrying a person.","allOf":[{"$ref":"schema:InteractAction.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MarryAction.json","title":"MarryAction","description":"The act of marrying a person.","allOf":[{"super":"schema:InteractAction"}],"type":"object","properties":{}}

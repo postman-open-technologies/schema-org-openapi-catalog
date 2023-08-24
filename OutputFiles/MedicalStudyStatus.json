@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MedicalStudyStatus.json","title":"MedicalStudyStatus","description":"The status of a medical study. Enumerated type.","allOf":[{"$ref":"schema:MedicalEnumeration.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MedicalStudyStatus.json","title":"MedicalStudyStatus","description":"The status of a medical study. Enumerated type.","allOf":[{"super":"schema:MedicalEnumeration"}],"type":"object","properties":{}}

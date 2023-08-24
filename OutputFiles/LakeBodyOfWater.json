@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/LakeBodyOfWater.json","title":"LakeBodyOfWater","description":"A lake (for example, Lake Pontrachain).","allOf":[{"$ref":"schema:BodyOfWater.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/LakeBodyOfWater.json","title":"LakeBodyOfWater","description":"A lake (for example, Lake Pontrachain).","allOf":[{"super":"schema:BodyOfWater"}],"type":"object","properties":{}}

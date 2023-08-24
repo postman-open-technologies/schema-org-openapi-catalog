@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ActionStatusType.json","title":"ActionStatusType","description":"The status of an Action.","allOf":[{"$ref":"schema:StatusEnumeration.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ActionStatusType.json","title":"ActionStatusType","description":"The status of an Action.","allOf":[{"super":"schema:StatusEnumeration"}],"type":"object","properties":{}}

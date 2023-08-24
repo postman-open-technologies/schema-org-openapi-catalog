@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/DataType.json","title":"DataType","description":"The basic data types such as Integers, Strings, etc.","allOf":[{"$ref":"rdfs:Class.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/DataType.json","title":"DataType","description":"The basic data types such as Integers, Strings, etc.","allOf":[{"super":"rdfs:Class"}],"type":"object","properties":{}}

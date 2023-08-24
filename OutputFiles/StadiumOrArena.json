@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/StadiumOrArena.json","title":"StadiumOrArena","description":"A stadium.","allOf":[{"$ref":"schema:SportsActivityLocation.json"},{"$ref":"schema:CivicStructure.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/StadiumOrArena.json","title":"StadiumOrArena","description":"A stadium.","allOf":[{"super":["schema:SportsActivityLocation"]},{"super":["schema:CivicStructure"]}],"type":"object","properties":{}}

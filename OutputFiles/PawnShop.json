@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/PawnShop.json","title":"PawnShop","description":"A shop that will buy, or lend money against the security of, personal possessions.","allOf":[{"$ref":"schema:Store.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/PawnShop.json","title":"PawnShop","description":"A shop that will buy, or lend money against the security of, personal possessions.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}

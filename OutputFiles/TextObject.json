@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/TextObject.json","title":"TextObject","description":"A text file. The text can be unformatted or contain markup, html, etc.","allOf":[{"$ref":"schema:MediaObject.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/TextObject.json","title":"TextObject","description":"A text file. The text can be unformatted or contain markup, html, etc.","allOf":[{"super":"schema:MediaObject"}],"type":"object","properties":{}}

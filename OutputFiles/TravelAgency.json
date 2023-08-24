@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/TravelAgency.json","title":"TravelAgency","description":"A travel agency.","allOf":[{"$ref":"schema:LocalBusiness.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/TravelAgency.json","title":"TravelAgency","description":"A travel agency.","allOf":[{"super":"schema:LocalBusiness"}],"type":"object","properties":{}}

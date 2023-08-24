@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SelfStorage.json","title":"SelfStorage","description":"A self-storage facility.","allOf":[{"$ref":"schema:LocalBusiness.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SelfStorage.json","title":"SelfStorage","description":"A self-storage facility.","allOf":[{"super":"schema:LocalBusiness"}],"type":"object","properties":{}}

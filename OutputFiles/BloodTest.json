@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/BloodTest.json","title":"BloodTest","description":"A medical test performed on a sample of a patient's blood.","allOf":[{"$ref":"schema:MedicalTest.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/BloodTest.json","title":"BloodTest","description":"A medical test performed on a sample of a patient's blood.","allOf":[{"super":"schema:MedicalTest"}],"type":"object","properties":{}}

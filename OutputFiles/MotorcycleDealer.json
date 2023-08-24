@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MotorcycleDealer.json","title":"MotorcycleDealer","description":"A motorcycle dealer.","allOf":[{"$ref":"schema:AutomotiveBusiness.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MotorcycleDealer.json","title":"MotorcycleDealer","description":"A motorcycle dealer.","allOf":[{"super":"schema:AutomotiveBusiness"}],"type":"object","properties":{}}

@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ElementarySchool.json","title":"ElementarySchool","description":"An elementary school.","allOf":[{"$ref":"schema:EducationalOrganization.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ElementarySchool.json","title":"ElementarySchool","description":"An elementary school.","allOf":[{"super":"schema:EducationalOrganization"}],"type":"object","properties":{}}

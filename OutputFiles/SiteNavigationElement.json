@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SiteNavigationElement.json","title":"SiteNavigationElement","description":"A navigation element of the page.","allOf":[{"$ref":"schema:WebPageElement.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SiteNavigationElement.json","title":"SiteNavigationElement","description":"A navigation element of the page.","allOf":[{"super":"schema:WebPageElement"}],"type":"object","properties":{}}

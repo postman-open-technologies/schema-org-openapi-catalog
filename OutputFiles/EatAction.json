@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/EatAction.json","title":"EatAction","description":"The act of swallowing solid objects.","allOf":[{"$ref":"schema:ConsumeAction.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/EatAction.json","title":"EatAction","description":"The act of swallowing solid objects.","allOf":[{"super":"schema:ConsumeAction"}],"type":"object","properties":{}}

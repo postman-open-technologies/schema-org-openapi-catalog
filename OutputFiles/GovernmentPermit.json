@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/GovernmentPermit.json","title":"GovernmentPermit","description":"A permit issued by a government agency.","allOf":[{"$ref":"schema:Permit.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/GovernmentPermit.json","title":"GovernmentPermit","description":"A permit issued by a government agency.","allOf":[{"super":"schema:Permit"}],"type":"object","properties":{}}

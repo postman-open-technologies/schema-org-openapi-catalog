@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ParkingFacility.json","title":"ParkingFacility","description":"A parking lot or other parking facility.","allOf":[{"$ref":"schema:CivicStructure.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ParkingFacility.json","title":"ParkingFacility","description":"A parking lot or other parking facility.","allOf":[{"super":"schema:CivicStructure"}],"type":"object","properties":{}}

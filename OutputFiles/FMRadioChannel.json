@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/FMRadioChannel.json","title":"FMRadioChannel","description":"A radio channel that uses FM.","allOf":[{"$ref":"schema:RadioChannel.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/FMRadioChannel.json","title":"FMRadioChannel","description":"A radio channel that uses FM.","allOf":[{"super":"schema:RadioChannel"}],"type":"object","properties":{}}

@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/BlogPosting.json","title":"BlogPosting","description":"A blog post.","allOf":[{"$ref":"schema:SocialMediaPosting.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/BlogPosting.json","title":"BlogPosting","description":"A blog post.","allOf":[{"super":"schema:SocialMediaPosting"}],"type":"object","properties":{}}

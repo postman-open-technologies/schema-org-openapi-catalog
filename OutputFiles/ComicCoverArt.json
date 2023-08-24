@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ComicCoverArt.json","title":"ComicCoverArt","description":"The artwork on the cover of a comic.","allOf":[{"$ref":"schema:ComicStory.json"},{"$ref":"schema:CoverArt.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ComicCoverArt.json","title":"ComicCoverArt","description":"The artwork on the cover of a comic.","allOf":[{"super":["schema:ComicStory"]},{"super":["schema:CoverArt"]}],"type":"object","properties":{}}

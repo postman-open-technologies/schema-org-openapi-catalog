@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ArtGallery.json","title":"ArtGallery","description":"An art gallery.","allOf":[{"$ref":"schema:EntertainmentBusiness.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ArtGallery.json","title":"ArtGallery","description":"An art gallery.","allOf":[{"super":"schema:EntertainmentBusiness"}],"type":"object","properties":{}}

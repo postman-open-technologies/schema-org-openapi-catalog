@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/DrugCostCategory.json","title":"DrugCostCategory","description":"Enumerated categories of medical drug costs.","allOf":[{"$ref":"schema:MedicalEnumeration.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/DrugCostCategory.json","title":"DrugCostCategory","description":"Enumerated categories of medical drug costs.","allOf":[{"super":"schema:MedicalEnumeration"}],"type":"object","properties":{}}

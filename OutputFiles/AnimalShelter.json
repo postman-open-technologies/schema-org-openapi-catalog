@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/AnimalShelter.json","title":"AnimalShelter","description":"Animal shelter.","allOf":[{"$ref":"schema:LocalBusiness.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/AnimalShelter.json","title":"AnimalShelter","description":"Animal shelter.","allOf":[{"super":"schema:LocalBusiness"}],"type":"object","properties":{}}

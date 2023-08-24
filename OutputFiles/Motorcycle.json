@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Motorcycle.json","title":"Motorcycle","description":"A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.","allOf":[{"$ref":"schema:Vehicle.json"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Motorcycle.json","title":"Motorcycle","description":"A motorcycle or motorbike is a single-track, two-wheeled motor vehicle.","allOf":[{"super":"schema:Vehicle"}],"type":"object","properties":{}}
