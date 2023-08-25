@@ -1,0 +1,16 @@
+{
+  "name": "schema-org-openapi-catalog",
+  "version": "1.0.0",
+  "description": "Generates a catalog of JSON schemas of various schema org types",
+  "main": "schemaGenerator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "fs": "^0.0.1-security"
+  },
+  "type": "module"
+}
