@@ -140,7 +140,6 @@ const getJSONschema = (type, filteredData) => {
     const schemaTypeLabel = getTitle(type);
     const schemaTypeDescription = getDescription(type);
 
-    schemaTemplate['$id'] = baseURL+schemaTypeLabel+'.json';
     schemaTemplate['title'] = schemaTypeLabel;
     schemaTemplate['description'] = schemaTypeDescription;
 
@@ -149,7 +148,7 @@ const getJSONschema = (type, filteredData) => {
         // If the current type is subclass of more than 1 classes
         if(Array.isArray(type['rdfs:subClassOf'])){
             type['rdfs:subClassOf'].forEach(item => {
-                schemaTemplate.allOf.push({'super':Object.values(item)})
+                schemaTemplate.allOf.push({'super':Object.values(item).toString()})
             })
         }
         else{
@@ -216,9 +215,9 @@ const main = async () => {
         }
     }
     if (userInput === 'All') {
-        data = await getFileData('./InputFiles/schemaorg-current-https.json');
+        data = await getFileData('./InputFiles/schemaorg-current-https.jsonld');
     } else {
-        data = await getFileData('./InputFiles/' + `${userInput}` + '.json');
+        data = await getFileData('./InputFiles/' + `${userInput}` + '.jsonld');
     }
 
     if(!data){
@@ -240,8 +239,8 @@ const main = async () => {
         saveJSONSchema(getTitle(type));
     });
 // Output file location
-    userInput === 'All' ? console.log('Output JSON schema file are at this location: schema-org-openapi-catalog/OutputFiles/') 
-    : console.log('Output JSON schema file are at this location: schema-org-openapi-catalog/SingularOutputFiles/');
+    userInput === 'All' ? console.log('Output JSON schema files are at this location: schema-org-openapi-catalog/OutputFiles/') 
+    : console.log('Output JSON schema file is present at this location: schema-org-openapi-catalog/SingularOutputFiles/');
 };
 
 main();
