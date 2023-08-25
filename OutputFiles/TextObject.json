@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"TextObject","description":"A text file. The text can be unformatted or contain markup, html, etc.","allOf":[{"super":"schema:MediaObject"}],"type":"object","properties":{}}

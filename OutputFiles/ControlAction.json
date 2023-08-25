@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ControlAction","description":"An agent controls a device or application.","allOf":[{"super":"schema:Action"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AnimalShelter","description":"Animal shelter.","allOf":[{"super":"schema:LocalBusiness"}],"type":"object","properties":{}}

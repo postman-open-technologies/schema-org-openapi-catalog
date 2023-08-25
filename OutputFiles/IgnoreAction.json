@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"IgnoreAction","description":"The act of intentionally disregarding the object. An agent ignores an object.","allOf":[{"super":"schema:AssessAction"}],"type":"object","properties":{}}

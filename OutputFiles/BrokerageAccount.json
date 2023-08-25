@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"BrokerageAccount","description":"An account that allows an investor to deposit funds and place investment orders with a licensed broker or brokerage firm.","allOf":[{"super":"schema:InvestmentOrDeposit"}],"type":"object","properties":{}}

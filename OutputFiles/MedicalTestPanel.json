@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MedicalTestPanel","description":"Any collection of tests commonly ordered together.","allOf":[{"super":"schema:MedicalTest"}],"type":"object","properties":{"subTest":{"description":"A component test of the panel.","schemaType":"schema:MedicalTest"}}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"DriveWheelConfigurationValue","description":"A value indicating which roadwheels will receive torque.","allOf":[{"super":"schema:QualitativeValue"}],"type":"object","properties":{}}

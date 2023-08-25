@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"EmployerAggregateRating","description":"An aggregate rating of an Organization related to its role as an employer.","allOf":[{"super":"schema:AggregateRating"}],"type":"object","properties":{}}

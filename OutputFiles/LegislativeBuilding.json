@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"LegislativeBuilding","description":"A legislative building&#x2014;for example, the state capitol.","allOf":[{"super":"schema:GovernmentBuilding"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CommentAction","description":"The act of generating a comment about a subject.","allOf":[{"super":"schema:CommunicateAction"}],"type":"object","properties":{"resultComment":{"description":"A sub property of result. The Comment created or sent as a result of this action.","schemaType":"schema:Comment"}}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PodcastSeason","description":"A single season of a podcast. Many podcasts do not break down into separate seasons. In that case, PodcastSeries should be used.","allOf":[{"super":"schema:CreativeWorkSeason"}],"type":"object","properties":{}}

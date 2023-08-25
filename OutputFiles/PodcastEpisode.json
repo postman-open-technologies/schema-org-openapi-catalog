@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PodcastEpisode","description":"A single episode of a podcast series.","allOf":[{"super":"schema:Episode"}],"type":"object","properties":{}}

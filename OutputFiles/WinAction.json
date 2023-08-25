@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"WinAction","description":"The act of achieving victory in a competitive activity.","allOf":[{"super":"schema:AchieveAction"}],"type":"object","properties":{"loser":{"description":"A sub property of participant. The loser of the action.","schemaType":"schema:Person"}}}

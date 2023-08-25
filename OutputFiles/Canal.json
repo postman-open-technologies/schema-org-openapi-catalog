@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Canal","description":"A canal, like the Panama Canal.","allOf":[{"super":"schema:BodyOfWater"}],"type":"object","properties":{}}

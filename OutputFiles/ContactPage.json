@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ContactPage","description":"Web page type: Contact page.","allOf":[{"super":"schema:WebPage"}],"type":"object","properties":{}}

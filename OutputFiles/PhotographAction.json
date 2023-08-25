@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PhotographAction","description":"The act of capturing still images of objects using a camera.","allOf":[{"super":"schema:CreateAction"}],"type":"object","properties":{}}

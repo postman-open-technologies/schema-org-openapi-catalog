@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PaymentService","description":"A Service to transfer funds from a person or organization to a beneficiary person or organization.","allOf":[{"super":"schema:FinancialProduct"}],"type":"object","properties":{}}

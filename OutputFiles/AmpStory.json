@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AmpStory","description":"A creative work with a visual storytelling format intended to be viewed online, particularly on mobile devices.","allOf":[{"super":"schema:MediaObject"},{"super":"schema:CreativeWork"}],"type":"object","properties":{}}

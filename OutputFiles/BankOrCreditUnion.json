@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"BankOrCreditUnion","description":"Bank or credit union.","allOf":[{"super":"schema:FinancialService"}],"type":"object","properties":{}}

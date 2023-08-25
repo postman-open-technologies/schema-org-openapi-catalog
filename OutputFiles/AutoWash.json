@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AutoWash","description":"A car wash business.","allOf":[{"super":"schema:AutomotiveBusiness"}],"type":"object","properties":{}}

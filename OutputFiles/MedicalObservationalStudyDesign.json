@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MedicalObservationalStudyDesign","description":"Design models for observational medical studies. Enumerated type.","allOf":[{"super":"schema:MedicalEnumeration"}],"type":"object","properties":{}}

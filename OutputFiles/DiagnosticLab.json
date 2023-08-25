@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"DiagnosticLab","description":"A medical laboratory that offers on-site or off-site diagnostic services.","allOf":[{"super":"schema:MedicalOrganization"}],"type":"object","properties":{"availableTest":{"description":"A diagnostic test or procedure offered by this lab.","schemaType":"schema:MedicalTest"}}}

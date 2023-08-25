@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"SomeProducts","description":"A placeholder for multiple similar products of the same kind.","allOf":[{"super":"schema:Product"}],"type":"object","properties":{"inventoryLevel":{"description":"The current approximate inventory level for the item or items.","schemaType":"schema:QuantitativeValue"}}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"OrganizeAction","description":"The act of manipulating/administering/supervising/controlling one or more objects.","allOf":[{"super":"schema:Action"}],"type":"object","properties":{}}

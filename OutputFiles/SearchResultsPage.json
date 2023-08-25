@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"SearchResultsPage","description":"Web page type: Search results page.","allOf":[{"super":"schema:WebPage"}],"type":"object","properties":{}}

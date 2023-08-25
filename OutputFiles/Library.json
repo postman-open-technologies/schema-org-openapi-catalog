@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Library","description":"A library.","allOf":[{"super":"schema:LocalBusiness"}],"type":"object","properties":{}}

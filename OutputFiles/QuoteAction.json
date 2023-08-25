@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"QuoteAction","description":"An agent quotes/estimates/appraises an object/product/service with a price at a location/store.","allOf":[{"super":"schema:TradeAction"}],"type":"object","properties":{}}

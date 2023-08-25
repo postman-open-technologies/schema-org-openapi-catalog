@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"RadioChannel","description":"A unique instance of a radio BroadcastService on a CableOrSatelliteService lineup.","allOf":[{"super":"schema:BroadcastChannel"}],"type":"object","properties":{}}

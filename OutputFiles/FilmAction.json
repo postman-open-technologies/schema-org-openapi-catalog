@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"FilmAction","description":"The act of capturing sound and moving images on film, video, or digitally.","allOf":[{"super":"schema:CreateAction"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"USNonprofitType","description":"USNonprofitType: Non-profit organization type originating from the United States.","allOf":[{"super":"schema:NonprofitType"}],"type":"object","properties":{}}

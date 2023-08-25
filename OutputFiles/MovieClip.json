@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MovieClip","description":"A short segment/part of a movie.","allOf":[{"super":"schema:Clip"}],"type":"object","properties":{}}
