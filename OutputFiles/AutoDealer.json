@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/AutoDealer.json","title":"AutoDealer","description":"An car dealership.","allOf":[{"super":"schema:AutomotiveBusiness"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AutoDealer","description":"An car dealership.","allOf":[{"super":"schema:AutomotiveBusiness"}],"type":"object","properties":{}}

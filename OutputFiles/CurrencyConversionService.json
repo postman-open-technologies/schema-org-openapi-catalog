@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/CurrencyConversionService.json","title":"CurrencyConversionService","description":"A service to convert funds from one currency to another currency.","allOf":[{"super":"schema:FinancialProduct"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CurrencyConversionService","description":"A service to convert funds from one currency to another currency.","allOf":[{"super":"schema:FinancialProduct"}],"type":"object","properties":{}}

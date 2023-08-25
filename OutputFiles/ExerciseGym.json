@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ExerciseGym.json","title":"ExerciseGym","description":"A gym.","allOf":[{"super":"schema:SportsActivityLocation"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ExerciseGym","description":"A gym.","allOf":[{"super":"schema:SportsActivityLocation"}],"type":"object","properties":{}}

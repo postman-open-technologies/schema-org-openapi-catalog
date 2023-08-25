@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Table.json","title":"Table","description":"A table on a Web page.","allOf":[{"super":"schema:WebPageElement"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Table","description":"A table on a Web page.","allOf":[{"super":"schema:WebPageElement"}],"type":"object","properties":{}}

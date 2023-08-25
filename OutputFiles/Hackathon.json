@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Hackathon.json","title":"Hackathon","description":"A [hackathon](https://en.wikipedia.org/wiki/Hackathon) event.","allOf":[{"super":"schema:Event"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Hackathon","description":"A [hackathon](https://en.wikipedia.org/wiki/Hackathon) event.","allOf":[{"super":"schema:Event"}],"type":"object","properties":{}}

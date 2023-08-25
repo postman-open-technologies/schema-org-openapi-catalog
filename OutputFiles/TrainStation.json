@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/TrainStation.json","title":"TrainStation","description":"A train station.","allOf":[{"super":"schema:CivicStructure"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"TrainStation","description":"A train station.","allOf":[{"super":"schema:CivicStructure"}],"type":"object","properties":{}}

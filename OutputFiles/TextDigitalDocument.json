@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/TextDigitalDocument.json","title":"TextDigitalDocument","description":"A file composed primarily of text.","allOf":[{"super":"schema:DigitalDocument"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"TextDigitalDocument","description":"A file composed primarily of text.","allOf":[{"super":"schema:DigitalDocument"}],"type":"object","properties":{}}

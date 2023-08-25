@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/CollectionPage.json","title":"CollectionPage","description":"Web page type: Collection page.","allOf":[{"super":"schema:WebPage"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CollectionPage","description":"Web page type: Collection page.","allOf":[{"super":"schema:WebPage"}],"type":"object","properties":{}}

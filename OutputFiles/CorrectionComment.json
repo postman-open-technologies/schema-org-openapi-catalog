@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/CorrectionComment.json","title":"CorrectionComment","description":"A [[comment]] that corrects [[CreativeWork]].","allOf":[{"super":"schema:Comment"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CorrectionComment","description":"A [[comment]] that corrects [[CreativeWork]].","allOf":[{"super":"schema:Comment"}],"type":"object","properties":{}}

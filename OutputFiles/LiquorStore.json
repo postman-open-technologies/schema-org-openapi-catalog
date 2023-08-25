@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/LiquorStore.json","title":"LiquorStore","description":"A shop that sells alcoholic drinks such as wine, beer, whisky and other spirits.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"LiquorStore","description":"A shop that sells alcoholic drinks such as wine, beer, whisky and other spirits.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}

@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/VideoGameClip.json","title":"VideoGameClip","description":"A short segment/part of a video game.","allOf":[{"super":"schema:Clip"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"VideoGameClip","description":"A short segment/part of a video game.","allOf":[{"super":"schema:Clip"}],"type":"object","properties":{}}

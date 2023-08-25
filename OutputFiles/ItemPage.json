@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ItemPage.json","title":"ItemPage","description":"A page devoted to a single item, such as a particular product or hotel.","allOf":[{"super":"schema:WebPage"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ItemPage","description":"A page devoted to a single item, such as a particular product or hotel.","allOf":[{"super":"schema:WebPage"}],"type":"object","properties":{}}

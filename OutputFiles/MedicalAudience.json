@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MedicalAudience.json","title":"MedicalAudience","description":"Target audiences for medical web pages.","allOf":[{"super":["schema:PeopleAudience"]},{"super":["schema:Audience"]}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MedicalAudience","description":"Target audiences for medical web pages.","allOf":[{"super":"schema:PeopleAudience"},{"super":"schema:Audience"}],"type":"object","properties":{}}

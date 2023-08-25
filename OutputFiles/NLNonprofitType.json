@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/NLNonprofitType.json","title":"NLNonprofitType","description":"NLNonprofitType: Non-profit organization type originating from the Netherlands.","allOf":[{"super":"schema:NonprofitType"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"NLNonprofitType","description":"NLNonprofitType: Non-profit organization type originating from the Netherlands.","allOf":[{"super":"schema:NonprofitType"}],"type":"object","properties":{}}

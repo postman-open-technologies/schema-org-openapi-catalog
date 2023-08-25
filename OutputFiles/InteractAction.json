@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/InteractAction.json","title":"InteractAction","description":"The act of interacting with another person or organization.","allOf":[{"super":"schema:Action"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"InteractAction","description":"The act of interacting with another person or organization.","allOf":[{"super":"schema:Action"}],"type":"object","properties":{}}

@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/LibrarySystem.json","title":"LibrarySystem","description":"A [[LibrarySystem]] is a collaborative system amongst several libraries.","allOf":[{"super":"schema:Organization"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"LibrarySystem","description":"A [[LibrarySystem]] is a collaborative system amongst several libraries.","allOf":[{"super":"schema:Organization"}],"type":"object","properties":{}}

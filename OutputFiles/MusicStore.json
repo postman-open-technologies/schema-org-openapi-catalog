@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MusicStore.json","title":"MusicStore","description":"A music store.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MusicStore","description":"A music store.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}

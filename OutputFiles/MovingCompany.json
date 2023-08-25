@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MovingCompany.json","title":"MovingCompany","description":"A moving company.","allOf":[{"super":"schema:HomeAndConstructionBusiness"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MovingCompany","description":"A moving company.","allOf":[{"super":"schema:HomeAndConstructionBusiness"}],"type":"object","properties":{}}

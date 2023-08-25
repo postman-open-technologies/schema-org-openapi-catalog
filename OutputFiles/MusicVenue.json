@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/MusicVenue.json","title":"MusicVenue","description":"A music venue.","allOf":[{"super":"schema:CivicStructure"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MusicVenue","description":"A music venue.","allOf":[{"super":"schema:CivicStructure"}],"type":"object","properties":{}}

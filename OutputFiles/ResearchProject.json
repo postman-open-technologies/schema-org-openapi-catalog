@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ResearchProject.json","title":"ResearchProject","description":"A Research project.","allOf":[{"super":"schema:Project"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ResearchProject","description":"A Research project.","allOf":[{"super":"schema:Project"}],"type":"object","properties":{}}

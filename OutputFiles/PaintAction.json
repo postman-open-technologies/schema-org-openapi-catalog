@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/PaintAction.json","title":"PaintAction","description":"The act of producing a painting, typically with paint and canvas as instruments.","allOf":[{"super":"schema:CreateAction"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PaintAction","description":"The act of producing a painting, typically with paint and canvas as instruments.","allOf":[{"super":"schema:CreateAction"}],"type":"object","properties":{}}

@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Brewery.json","title":"Brewery","description":"Brewery.","allOf":[{"super":"schema:FoodEstablishment"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Brewery","description":"Brewery.","allOf":[{"super":"schema:FoodEstablishment"}],"type":"object","properties":{}}

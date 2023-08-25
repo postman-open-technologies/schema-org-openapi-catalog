@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Aquarium.json","title":"Aquarium","description":"Aquarium.","allOf":[{"super":"schema:CivicStructure"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Aquarium","description":"Aquarium.","allOf":[{"super":"schema:CivicStructure"}],"type":"object","properties":{}}

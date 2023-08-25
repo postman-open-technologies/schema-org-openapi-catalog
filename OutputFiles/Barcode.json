@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Barcode.json","title":"Barcode","description":"An image of a visual machine-readable code such as a barcode or QR code.","allOf":[{"super":"schema:ImageObject"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Barcode","description":"An image of a visual machine-readable code such as a barcode or QR code.","allOf":[{"super":"schema:ImageObject"}],"type":"object","properties":{}}

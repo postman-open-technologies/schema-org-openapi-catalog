@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/GatedResidenceCommunity.json","title":"GatedResidenceCommunity","description":"Residence type: Gated community.","allOf":[{"super":"schema:Residence"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"GatedResidenceCommunity","description":"Residence type: Gated community.","allOf":[{"super":"schema:Residence"}],"type":"object","properties":{}}

@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/LiteraryEvent.json","title":"LiteraryEvent","description":"Event type: Literary event.","allOf":[{"super":"schema:Event"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"LiteraryEvent","description":"Event type: Literary event.","allOf":[{"super":"schema:Event"}],"type":"object","properties":{}}

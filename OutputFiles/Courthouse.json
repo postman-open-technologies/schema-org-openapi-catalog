@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Courthouse.json","title":"Courthouse","description":"A courthouse.","allOf":[{"super":"schema:GovernmentBuilding"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Courthouse","description":"A courthouse.","allOf":[{"super":"schema:GovernmentBuilding"}],"type":"object","properties":{}}

@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/DryCleaningOrLaundry.json","title":"DryCleaningOrLaundry","description":"A dry-cleaning business.","allOf":[{"super":"schema:LocalBusiness"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"DryCleaningOrLaundry","description":"A dry-cleaning business.","allOf":[{"super":"schema:LocalBusiness"}],"type":"object","properties":{}}

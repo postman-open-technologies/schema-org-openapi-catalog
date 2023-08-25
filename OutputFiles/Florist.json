@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Florist.json","title":"Florist","description":"A florist.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Florist","description":"A florist.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}

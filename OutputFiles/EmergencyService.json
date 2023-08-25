@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/EmergencyService.json","title":"EmergencyService","description":"An emergency service, such as a fire station or ER.","allOf":[{"super":"schema:LocalBusiness"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"EmergencyService","description":"An emergency service, such as a fire station or ER.","allOf":[{"super":"schema:LocalBusiness"}],"type":"object","properties":{}}

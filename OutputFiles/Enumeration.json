@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Enumeration.json","title":"Enumeration","description":"Lists or enumerations—for example, a list of cuisines or music genres, etc.","allOf":[{"super":"schema:Intangible"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Enumeration","description":"Lists or enumerations—for example, a list of cuisines or music genres, etc.","allOf":[{"super":"schema:Intangible"}],"type":"object","properties":{}}

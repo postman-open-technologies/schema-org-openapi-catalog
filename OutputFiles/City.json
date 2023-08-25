@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/City.json","title":"City","description":"A city or town.","allOf":[{"super":"schema:AdministrativeArea"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"City","description":"A city or town.","allOf":[{"super":"schema:AdministrativeArea"}],"type":"object","properties":{}}

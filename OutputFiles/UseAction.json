@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/UseAction.json","title":"UseAction","description":"The act of applying an object to its intended purpose.","allOf":[{"super":"schema:ConsumeAction"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"UseAction","description":"The act of applying an object to its intended purpose.","allOf":[{"super":"schema:ConsumeAction"}],"type":"object","properties":{}}

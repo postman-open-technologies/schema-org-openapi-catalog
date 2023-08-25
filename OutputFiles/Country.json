@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Country.json","title":"Country","description":"A country.","allOf":[{"super":"schema:AdministrativeArea"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Country","description":"A country.","allOf":[{"super":"schema:AdministrativeArea"}],"type":"object","properties":{}}

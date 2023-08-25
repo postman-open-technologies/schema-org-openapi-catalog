@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/SpreadsheetDigitalDocument.json","title":"SpreadsheetDigitalDocument","description":"A spreadsheet file.","allOf":[{"super":"schema:DigitalDocument"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"SpreadsheetDigitalDocument","description":"A spreadsheet file.","allOf":[{"super":"schema:DigitalDocument"}],"type":"object","properties":{}}

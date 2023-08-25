@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Pond.json","title":"Pond","description":"A pond.","allOf":[{"super":"schema:BodyOfWater"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Pond","description":"A pond.","allOf":[{"super":"schema:BodyOfWater"}],"type":"object","properties":{}}

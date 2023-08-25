@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Float.json","title":"Float","description":"Data type: Floating number.","allOf":[{"super":"schema:Number"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Float","description":"Data type: Floating number.","allOf":[{"super":"schema:Number"}],"type":"object","properties":{}}

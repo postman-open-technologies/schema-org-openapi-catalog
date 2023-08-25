@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/FireStation.json","title":"FireStation","description":"A fire station. With firemen.","allOf":[{"super":["schema:CivicStructure"]},{"super":["schema:EmergencyService"]}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"FireStation","description":"A fire station. With firemen.","allOf":[{"super":"schema:CivicStructure"},{"super":"schema:EmergencyService"}],"type":"object","properties":{}}

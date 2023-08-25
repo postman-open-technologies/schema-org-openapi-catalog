@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/Volcano.json","title":"Volcano","description":"A volcano, like Fujisan.","allOf":[{"super":"schema:Landform"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Volcano","description":"A volcano, like Fujisan.","allOf":[{"super":"schema:Landform"}],"type":"object","properties":{}}

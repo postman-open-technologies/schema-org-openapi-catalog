@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/HinduTemple.json","title":"HinduTemple","description":"A Hindu temple.","allOf":[{"super":"schema:PlaceOfWorship"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"HinduTemple","description":"A Hindu temple.","allOf":[{"super":"schema:PlaceOfWorship"}],"type":"object","properties":{}}

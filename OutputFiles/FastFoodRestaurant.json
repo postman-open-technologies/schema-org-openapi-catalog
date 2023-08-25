@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/FastFoodRestaurant.json","title":"FastFoodRestaurant","description":"A fast-food restaurant.","allOf":[{"super":"schema:FoodEstablishment"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"FastFoodRestaurant","description":"A fast-food restaurant.","allOf":[{"super":"schema:FoodEstablishment"}],"type":"object","properties":{}}

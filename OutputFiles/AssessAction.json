@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/AssessAction.json","title":"AssessAction","description":"The act of forming one's opinion, reaction or sentiment.","allOf":[{"super":"schema:Action"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AssessAction","description":"The act of forming one's opinion, reaction or sentiment.","allOf":[{"super":"schema:Action"}],"type":"object","properties":{}}

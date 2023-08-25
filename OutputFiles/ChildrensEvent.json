@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ChildrensEvent.json","title":"ChildrensEvent","description":"Event type: Children's event.","allOf":[{"super":"schema:Event"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ChildrensEvent","description":"Event type: Children's event.","allOf":[{"super":"schema:Event"}],"type":"object","properties":{}}

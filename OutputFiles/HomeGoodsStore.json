@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/HomeGoodsStore.json","title":"HomeGoodsStore","description":"A home goods store.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"HomeGoodsStore","description":"A home goods store.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}

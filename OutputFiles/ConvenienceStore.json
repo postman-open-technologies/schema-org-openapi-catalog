@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/ConvenienceStore.json","title":"ConvenienceStore","description":"A convenience store.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ConvenienceStore","description":"A convenience store.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}

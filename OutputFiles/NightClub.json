@@ -1,1 +1,1 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://schema.org/NightClub.json","title":"NightClub","description":"A nightclub or discotheque.","allOf":[{"super":"schema:EntertainmentBusiness"}],"type":"object","properties":{}}
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"NightClub","description":"A nightclub or discotheque.","allOf":[{"super":"schema:EntertainmentBusiness"}],"type":"object","properties":{}}
