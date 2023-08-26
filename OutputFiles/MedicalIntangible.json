@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MedicalIntangible","description":"A utility class that serves as the umbrella for a number of 'intangible' things in the medical space.","allOf":[{"super":"schema:MedicalEntity"}],"type":"object","properties":{}}

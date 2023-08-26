@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ToyStore","description":"A toy store.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}

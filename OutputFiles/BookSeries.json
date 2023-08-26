@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"BookSeries","description":"A series of books. Included books can be indicated with the hasPart property.","allOf":[{"super":"schema:CreativeWorkSeries"}],"type":"object","properties":{}}

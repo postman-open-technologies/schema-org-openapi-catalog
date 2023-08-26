@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MedicalTrialDesign","description":"Design models for medical trials. Enumerated type.","allOf":[{"super":"schema:MedicalEnumeration"}],"type":"object","properties":{}}

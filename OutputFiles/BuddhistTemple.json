@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"BuddhistTemple","description":"A Buddhist temple.","allOf":[{"super":"schema:PlaceOfWorship"}],"type":"object","properties":{}}

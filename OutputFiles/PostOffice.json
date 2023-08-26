@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PostOffice","description":"A post office.","allOf":[{"super":"schema:GovernmentOffice"}],"type":"object","properties":{}}

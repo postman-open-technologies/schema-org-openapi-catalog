@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ReactAction","description":"The act of responding instinctively and emotionally to an object, expressing a sentiment.","allOf":[{"super":"schema:AssessAction"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PalliativeProcedure","description":"A medical procedure intended primarily for palliative purposes, aimed at relieving the symptoms of an underlying health condition.","allOf":[{"super":"schema:MedicalTherapy"},{"super":"schema:MedicalProcedure"}],"type":"object","properties":{}}

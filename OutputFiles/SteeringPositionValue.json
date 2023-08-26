@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"SteeringPositionValue","description":"A value indicating a steering position.","allOf":[{"super":"schema:QualitativeValue"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"DiagnosticProcedure","description":"A medical procedure intended primarily for diagnostic, as opposed to therapeutic, purposes.","allOf":[{"super":"schema:MedicalProcedure"}],"type":"object","properties":{}}

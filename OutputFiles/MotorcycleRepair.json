@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MotorcycleRepair","description":"A motorcycle repair shop.","allOf":[{"super":"schema:AutomotiveBusiness"}],"type":"object","properties":{}}

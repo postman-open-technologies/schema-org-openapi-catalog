@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AllocateAction","description":"The act of organizing tasks/objects/events by associating resources to it.","allOf":[{"super":"schema:OrganizeAction"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CreateAction","description":"The act of deliberately creating/producing/generating/building a result out of the agent.","allOf":[{"super":"schema:Action"}],"type":"object","properties":{}}

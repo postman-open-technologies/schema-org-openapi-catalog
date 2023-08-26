@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PhysicalTherapy","description":"A process of progressive physical care and rehabilitation aimed at improving a health condition.","allOf":[{"super":"schema:MedicalTherapy"}],"type":"object","properties":{}}

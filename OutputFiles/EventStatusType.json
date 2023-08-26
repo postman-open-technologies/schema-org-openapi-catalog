@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"EventStatusType","description":"EventStatusType is an enumeration type whose instances represent several states that an Event may be in.","allOf":[{"super":"schema:StatusEnumeration"}],"type":"object","properties":{}}

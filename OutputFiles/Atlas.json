@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Atlas","description":"A collection or bound volume of maps, charts, plates or tables, physical or in media form illustrating any subject.","allOf":[{"super":"schema:CreativeWork"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"TaxiStand","description":"A taxi stand.","allOf":[{"super":"schema:CivicStructure"}],"type":"object","properties":{}}

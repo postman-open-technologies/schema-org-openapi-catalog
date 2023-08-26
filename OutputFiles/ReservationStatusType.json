@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ReservationStatusType","description":"Enumerated status values for Reservation.","allOf":[{"super":"schema:StatusEnumeration"}],"type":"object","properties":{}}

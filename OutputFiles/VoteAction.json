@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"VoteAction","description":"The act of expressing a preference from a fixed/finite/structured set of choices/options.","allOf":[{"super":"schema:ChooseAction"}],"type":"object","properties":{"candidate":{"description":"A sub property of object. The candidate subject of this action.","schemaType":"schema:Person"}}}

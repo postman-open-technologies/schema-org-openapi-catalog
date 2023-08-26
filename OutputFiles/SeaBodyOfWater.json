@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"SeaBodyOfWater","description":"A sea (for example, the Caspian sea).","allOf":[{"super":"schema:BodyOfWater"}],"type":"object","properties":{}}

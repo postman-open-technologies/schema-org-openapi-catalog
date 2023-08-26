@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Reservoir","description":"A reservoir of water, typically an artificially created lake, like the Lake Kariba reservoir.","allOf":[{"super":"schema:BodyOfWater"}],"type":"object","properties":{}}

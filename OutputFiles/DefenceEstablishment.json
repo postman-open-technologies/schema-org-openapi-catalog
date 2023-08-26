@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"DefenceEstablishment","description":"A defence establishment, such as an army or navy base.","allOf":[{"super":"schema:GovernmentBuilding"}],"type":"object","properties":{}}

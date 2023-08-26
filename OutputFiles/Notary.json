@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Notary","description":"A notary.","allOf":[{"super":"schema:LegalService"}],"type":"object","properties":{}}

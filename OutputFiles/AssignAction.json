@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AssignAction","description":"The act of allocating an action/event/task to some destination (someone or something).","allOf":[{"super":"schema:AllocateAction"}],"type":"object","properties":{}}

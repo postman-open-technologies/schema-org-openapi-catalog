@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Poster","description":"A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something.","allOf":[{"super":"schema:CreativeWork"}],"type":"object","properties":{}}

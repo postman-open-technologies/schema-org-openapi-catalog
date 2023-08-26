@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"LegalForceStatus","description":"A list of possible statuses for the legal force of a legislation.","allOf":[{"super":"schema:StatusEnumeration"}],"type":"object","properties":{}}

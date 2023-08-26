@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"DanceGroup","description":"A dance group&#x2014;for example, the Alvin Ailey Dance Theater or Riverdance.","allOf":[{"super":"schema:PerformingGroup"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PresentationDigitalDocument","description":"A file containing slides or used for a presentation.","allOf":[{"super":"schema:DigitalDocument"}],"type":"object","properties":{}}
