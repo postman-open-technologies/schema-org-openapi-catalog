@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CheckoutPage","description":"Web page type: Checkout page.","allOf":[{"super":"schema:WebPage"}],"type":"object","properties":{}}

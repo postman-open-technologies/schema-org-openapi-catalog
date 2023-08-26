@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Manuscript","description":"A book, document, or piece of music written by hand rather than typed or printed.","allOf":[{"super":"schema:CreativeWork"}],"type":"object","properties":{}}

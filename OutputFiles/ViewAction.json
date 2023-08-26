@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ViewAction","description":"The act of consuming static visual content.","allOf":[{"super":"schema:ConsumeAction"}],"type":"object","properties":{}}

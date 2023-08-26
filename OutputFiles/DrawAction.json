@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"DrawAction","description":"The act of producing a visual/graphical representation of an object, typically with a pen/pencil and paper as instruments.","allOf":[{"super":"schema:CreateAction"}],"type":"object","properties":{}}

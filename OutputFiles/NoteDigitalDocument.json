@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"NoteDigitalDocument","description":"A file containing a note, primarily for the author.","allOf":[{"super":"schema:DigitalDocument"}],"type":"object","properties":{}}

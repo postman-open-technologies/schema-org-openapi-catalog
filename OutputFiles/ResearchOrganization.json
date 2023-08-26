@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ResearchOrganization","description":"A Research Organization (e.g. scientific institute, research company).","allOf":[{"super":"schema:Organization"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"BoatTerminal","description":"A terminal for boats, ships, and other water vessels.","allOf":[{"super":"schema:CivicStructure"}],"type":"object","properties":{}}

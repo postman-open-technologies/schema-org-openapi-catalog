@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"TheaterEvent","description":"Event type: Theater performance.","allOf":[{"super":"schema:Event"}],"type":"object","properties":{}}

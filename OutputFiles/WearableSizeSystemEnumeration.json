@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"WearableSizeSystemEnumeration","description":"Enumerates common size systems specific for wearable products","allOf":[{"super":"schema:SizeSystemEnumeration"}],"type":"object","properties":{}}

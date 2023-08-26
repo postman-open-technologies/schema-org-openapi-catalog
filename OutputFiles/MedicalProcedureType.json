@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MedicalProcedureType","description":"An enumeration that describes different types of medical procedures.","allOf":[{"super":"schema:MedicalEnumeration"}],"type":"object","properties":{}}

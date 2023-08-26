@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MedicalDevicePurpose","description":"Categories of medical devices, organized by the purpose or intended use of the device.","allOf":[{"super":"schema:MedicalEnumeration"}],"type":"object","properties":{}}

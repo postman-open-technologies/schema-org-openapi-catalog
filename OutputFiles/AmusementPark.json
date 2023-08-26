@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AmusementPark","description":"An amusement park.","allOf":[{"super":"schema:EntertainmentBusiness"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MobilePhoneStore","description":"A store that sells mobile phones and related accessories.","allOf":[{"super":"schema:Store"}],"type":"object","properties":{}}

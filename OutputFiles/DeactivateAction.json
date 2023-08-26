@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"DeactivateAction","description":"The act of stopping or deactivating a device or application (e.g. stopping a timer or turning off a flashlight).","allOf":[{"super":"schema:ControlAction"}],"type":"object","properties":{}}

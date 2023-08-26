@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"URL","description":"Data type: URL.","allOf":[{"super":"schema:Text"}],"type":"object","properties":{}}

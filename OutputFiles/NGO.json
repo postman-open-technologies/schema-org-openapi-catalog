@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"NGO","description":"Organization: Non-governmental Organization.","allOf":[{"super":"schema:Organization"}],"type":"object","properties":{}}

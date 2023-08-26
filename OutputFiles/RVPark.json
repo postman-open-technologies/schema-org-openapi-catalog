@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"RVPark","description":"A place offering space for \"Recreational Vehicles\", Caravans, mobile homes and the like.","allOf":[{"super":"schema:CivicStructure"}],"type":"object","properties":{}}

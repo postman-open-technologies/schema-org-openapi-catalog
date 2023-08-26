@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CatholicChurch","description":"A Catholic church.","allOf":[{"super":"schema:Church"}],"type":"object","properties":{}}

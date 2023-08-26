@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AutoRepair","description":"Car repair business.","allOf":[{"super":"schema:AutomotiveBusiness"}],"type":"object","properties":{}}

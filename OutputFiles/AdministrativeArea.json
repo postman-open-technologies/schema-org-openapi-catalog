@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AdministrativeArea","description":"A geographical region, typically under the jurisdiction of a particular government.","allOf":[{"super":"schema:Place"}],"type":"object","properties":{}}

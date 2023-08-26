@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"RoofingContractor","description":"A roofing contractor.","allOf":[{"super":"schema:HomeAndConstructionBusiness"}],"type":"object","properties":{}}

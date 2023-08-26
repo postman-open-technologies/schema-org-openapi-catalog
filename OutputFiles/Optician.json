@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Optician","description":"A store that sells reading glasses and similar devices for improving vision.","allOf":[{"super":"schema:MedicalBusiness"}],"type":"object","properties":{}}

@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"EducationalOrganization","description":"An educational organization.","allOf":[{"super":"schema:CivicStructure"},{"super":"schema:Organization"}],"type":"object","properties":{"alumni":{"description":"Alumni of an organization.","schemaType":"schema:Person"}}}

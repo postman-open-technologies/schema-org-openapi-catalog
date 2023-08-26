@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"CategoryCodeSet","description":"A set of Category Code values.","allOf":[{"super":"schema:DefinedTermSet"}],"type":"object","properties":{"hasCategoryCode":{"description":"A Category code contained in this code set.","schemaType":"schema:CategoryCode"}}}

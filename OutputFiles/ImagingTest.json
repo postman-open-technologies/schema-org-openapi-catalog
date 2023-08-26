@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ImagingTest","description":"Any medical imaging modality typically used for diagnostic purposes.","allOf":[{"super":"schema:MedicalTest"}],"type":"object","properties":{"imagingTechnique":{"description":"Imaging technique used.","schemaType":"schema:MedicalImagingTechnique"}}}

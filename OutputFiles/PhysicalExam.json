@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PhysicalExam","description":"A type of physical examination of a patient performed by a physician. ","allOf":[{"super":"schema:MedicalEnumeration"},{"super":"schema:MedicalProcedure"}],"type":"object","properties":{}}

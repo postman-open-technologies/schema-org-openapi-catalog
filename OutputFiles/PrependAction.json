@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"PrependAction","description":"The act of inserting at the beginning if an ordered collection.","allOf":[{"super":"schema:InsertAction"}],"type":"object","properties":{}}

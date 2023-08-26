@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"MusicVideoObject","description":"A music video file.","allOf":[{"super":"schema:MediaObject"}],"type":"object","properties":{}}

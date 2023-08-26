@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"DaySpa","description":"A day spa.","allOf":[{"super":"schema:HealthAndBeautyBusiness"}],"type":"object","properties":{}}

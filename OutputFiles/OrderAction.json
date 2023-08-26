@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"OrderAction","description":"An agent orders an object/product/service to be delivered/sent.","allOf":[{"super":"schema:TradeAction"}],"type":"object","properties":{"deliveryMethod":{"description":"A sub property of instrument. The method of delivery.","enum":["OnSitePickup","LockerDelivery","ParcelService"]}}}

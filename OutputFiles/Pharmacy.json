@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"Pharmacy","description":"A pharmacy or drugstore.","allOf":[{"super":"schema:MedicalOrganization"},{"super":"schema:MedicalBusiness"}],"type":"object","properties":{}}

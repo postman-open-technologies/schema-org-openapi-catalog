@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ShortStory","description":"Short story or tale. A brief work of literature, usually written in narrative prose.","allOf":[{"super":"schema:CreativeWork"}],"type":"object","properties":{}}

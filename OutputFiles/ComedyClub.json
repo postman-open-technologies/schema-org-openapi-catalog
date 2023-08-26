@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"ComedyClub","description":"A comedy club.","allOf":[{"super":"schema:EntertainmentBusiness"}],"type":"object","properties":{}}

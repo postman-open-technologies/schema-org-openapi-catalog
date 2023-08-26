@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"AutomotiveBusiness","description":"Car repair, sales, or parts.","allOf":[{"super":"schema:LocalBusiness"}],"type":"object","properties":{}}

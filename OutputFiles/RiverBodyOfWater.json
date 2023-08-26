@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"RiverBodyOfWater","description":"A river (for example, the broad majestic Shannon).","allOf":[{"super":"schema:BodyOfWater"}],"type":"object","properties":{}}
