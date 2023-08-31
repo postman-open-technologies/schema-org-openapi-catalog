@@ -17,7 +17,7 @@ All the [schema.org](http://schema.org) types get derived from some or the other
 
 <br/>
 
-**Mentors:** @MikeRalphson, @sourabhbagrecha and @saialekhya-001
+**Mentors:** @MikeRalphson, @sourabhbagrecha, @saialekhya-001 and @kulnor
 
 **Project Repo:** postman-open-technologies/schema-org-openapi-catalog
 

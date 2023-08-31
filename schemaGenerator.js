@@ -1,12 +1,26 @@
- // Import fs promises module for async file operations
+/**
+ * @fileOverview This file includes the implementation of the conversion of schema.org types(JSON-LD version) into JSON schema
+ * @version 1.0.0
+ * @license Apache-2.0
+ * @author Pragya Bhardwaj
+ * 
+ */
+
+
+// Import fs promises module for async file operations
 import { constants, access, readFile, writeFile } from 'fs/promises';
 
-const baseURL = "https://schema.org/";
 const schemaTemplate = {};
 let data, filteredData;
 const userInput = process.argv[2];
 
-// Extract title for the schema type or the property
+/**
+ * Extract title for the schema type or the property
+ * 
+ * @param {object} type a schema.org type of Object type
+ * @returns {string} label of schema.org type
+ * 
+ */
 const getTitle = (type) => {
     if(type['rdfs:label']['@value']){
         return type['rdfs:label']['@value'];
@@ -16,7 +30,13 @@ const getTitle = (type) => {
     }
 }
 
-// Extract description for the schema type or the property
+/**
+ * Extract description for the schema type or the property
+ * 
+ * @param {object} type a schema.org type of Object type
+ * @returns {string} comment of schema.org type
+ * 
+ */
 const getDescription = (type) => {
     if(type['rdfs:comment']['@value']){
         return type['rdfs:comment']['@value'];
@@ -26,13 +46,20 @@ const getDescription = (type) => {
     }
 }
 
-// Collate all of the enumeration values of an enum
-const getEnumerations = (x) => {
+
+/**
+ * Collate all of the enumeration values of an enum
+ * 
+ * @param {object} range a schema.org type of Object type
+ * @returns {Array} enumArray an array of enumerations
+ * 
+ */
+const getEnumerations = (range) => {
     let enumArray =[];
     data['@graph'].forEach(item => {
-        if(item['@id'] === x){
+        if(item['@id'] === range){
             if(item['@type'] === 'rdfs:Class' && item['rdfs:subClassOf'] && item['rdfs:subClassOf']['@id'] === 'schema:Enumeration'){
-                enumArray = data['@graph'].filter(item => item['@type'] === x)
+                enumArray = data['@graph'].filter(item => item['@type'] === range)
                 .map(item => {
                     return item['rdfs:label'];
                 })
@@ -42,10 +69,17 @@ const getEnumerations = (x) => {
     return enumArray
 }
 
-// Data types' mapping from JSON-LD to JSON schema
-const checkDataType = (x) => {
+
+/**
+ * Get data types' mapping from JSON-LD to JSON schema
+ * 
+ * @param {Array} range rangeIncludes property of schema.org type
+ * @returns {Object} tempType data type of the property of schema.org type
+ * 
+ */
+const checkDataType = (range) => {
     const tempType = {};
-    switch(x.join()){
+    switch(range.join()){
         case "schema:Text" :
             tempType['type'] = "string";
             break;
@@ -71,20 +105,21 @@ const checkDataType = (x) => {
             tempType['type'] = "integer";
             break;
         default:
-            const allEnums = getEnumerations(x.join())
+            const allEnums = getEnumerations(range.join())
             allEnums.length?
                 tempType['enum'] = allEnums:
-                tempType['schemaType'] = x.toString();
+                tempType['schemaType'] = range.toString();
     }
     return tempType;
 } 
 
 /**
+ * Find out the data types for the schema.org types' properties
  * 
  * @param {object} schemaProperties an array of properties of a schema type
  * @returns {object} properties an object consists of property name and its type 
+ * 
  */
-
 const getPropertyType = (schemaProperties) => {
     let properties = {};
     let propertyType;
@@ -111,11 +146,12 @@ const getPropertyType = (schemaProperties) => {
 }
 
 /**
+ * Collate all the properties of schema.org type
  * 
  * @param {string} typeName name of the schema type
- * @returns 
+ * @param {Object} filteredData reference file to find related properties
+ * @returns {Object} all the properties for schema.org type
  */
-
 const getProperties = (typeName, filteredData) => {
     const schemaProperties = filteredData.filter(item => {
         const domainIncludes = item['schema:domainIncludes'];
@@ -132,10 +168,12 @@ const getProperties = (typeName, filteredData) => {
 }
 
 /**
- * @function getJSONschema
+ * Build JSON schema for schema.org type
+ * 
  * @param {object} type schema type 
+ * @param {Object} filteredData reference file to find related properties
+ * @returns {Object} JSON schema generated
  */
-
 const getJSONschema = (type, filteredData) => {
     const schemaTypeLabel = getTitle(type);
     const schemaTypeDescription = getDescription(type);
@@ -161,7 +199,11 @@ const getJSONschema = (type, filteredData) => {
     return schemaTemplate;
 }
 
-// Add the JSON schema generated in a collated schemas' file
+/**
+ * Save JSON schema for schema.org type in the output directories
+ * 
+ * @param {string} typeName schema.org type name
+ */
 const saveJSONSchema = async (typeName) => {
     const schemaVersion = {"$schema": "https://json-schema.org/draft/2020-12/schema"};
     const updatedContent = Object.assign({},schemaVersion, schemaTemplate );
@@ -175,7 +217,12 @@ const saveJSONSchema = async (typeName) => {
 
 }
 
-// Remove deprecated and meta schema org terms
+/**
+ * Remove deprecated and meta schema org terms
+ * 
+ * @param {Object} data schema.org types
+ * @returns {Object} schema.org types excluding superserded terms and meta schemas
+ */
 const filterData = async(data) => {
         return data['@graph'].filter((item) => {
         const notSuperseded = !item['schema:supersededBy'];
@@ -184,7 +231,8 @@ const filterData = async(data) => {
     })
 };
 
-// Initial step to process the user input and filter all the schema org types, build JSON schema for every schema org type
+
+// Starting point of the code to get the user Input and generate JSON schema
 const main = async () => {
     
     const checkFileAccess = async (fileReference) => {
