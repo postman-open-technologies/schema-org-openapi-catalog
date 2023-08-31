@@ -1,4 +1,12 @@
- // Import fs promises module for async file operations
+/**
+ * @fileOverview This file includes the implementation of the conversion of schema.org types(JSON-LD version) into JSON schema
+ * @version 1.0.0
+ * @license Apache-2.0
+ * @author Pragya Bhardwaj
+ */
+
+
+// Import fs promises module for async file operations
 import { constants, access, readFile, writeFile } from 'fs/promises';
 
 const baseURL = "https://schema.org/";
