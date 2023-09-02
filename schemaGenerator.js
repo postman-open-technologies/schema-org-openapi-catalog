@@ -208,7 +208,8 @@ const saveJSONSchema = async (typeName) => {
     const schemaVersion = {"$schema": "https://json-schema.org/draft/2020-12/schema"};
     const updatedContent = Object.assign({},schemaVersion, schemaTemplate );
     try{
-        const promise = writeFile(userInput === 'All' ? `./OutputFiles/${typeName}.json`: `./SingularOutputFiles/${typeName}.json`, JSON.stringify(updatedContent));
+        const promise = writeFile(userInput === 'All' ? `./SchemaReleases/22.0/OutputFiles/AllSchemas/${typeName}.json`
+        : `./SchemaReleases/22.0/OutputFiles/SingularSchemas/${typeName}.json`, JSON.stringify(updatedContent));
         await promise;
     }
     catch(err){
@@ -263,9 +264,9 @@ const main = async () => {
         }
     }
     if (userInput === 'All') {
-        data = await getFileData('./InputFiles/schemaorg-current-https.jsonld');
+        data = await getFileData('./SchemaReleases/22.0/ReferenceFiles/schemaorg-current-https.jsonld');
     } else {
-        data = await getFileData('./InputFiles/' + `${userInput}` + '.jsonld');
+        data = await getFileData('./SchemaReleases/22.0/ReferenceFiles/' + `${userInput}` + '.jsonld');
     }
 
     if(!data){

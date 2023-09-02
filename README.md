@@ -5,6 +5,11 @@ It creates an open catalog of OpenAPI definitions for each of the Schema.org T
 
 It helps save developer's work when it comes to starting new APIs, but also help ensure APIs are developed using common standards and are as interoperable as possible.
 
+<br/>
+
+
+> **_NOTE:_** This project has been a part of Google Summer of Code (GSoC) 2023.
+
 **This project unfolds in two key steps:**
 
 1. **Generate JSON Schema:** Begin by transforming the JSON-LD version of **[Schema.org](https://schema.org/)** types into JSON schemas.
